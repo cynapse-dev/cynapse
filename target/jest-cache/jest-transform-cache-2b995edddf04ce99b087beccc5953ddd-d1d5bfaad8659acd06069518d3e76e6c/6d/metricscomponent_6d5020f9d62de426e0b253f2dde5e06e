@@ -1,0 +1,51 @@
+2ccea1acd77f64e1b0158ef889c35da9
+/* istanbul ignore next */
+function cov_1veqjd8q8g() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/admin/metrics/metrics.component.html";
+  var hash = "9d64d95cbc4d7f9fbb1c0b3a90dde3186c79e6f3";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/admin/metrics/metrics.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 2018
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9d64d95cbc4d7f9fbb1c0b3a90dde3186c79e6f3"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1veqjd8q8g = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1veqjd8q8g();
+cov_1veqjd8q8g().s[0]++;
+module.exports = "<div>\n  <h2>\n    <span id=\"metrics-page-heading\" jhiTranslate=\"metrics.title\" data-cy=\"metricsPageHeading\">Application Metrics</span>\n\n    <button class=\"btn btn-primary float-right\" (click)=\"refresh()\">\n      <fa-icon icon=\"sync\"></fa-icon> <span jhiTranslate=\"metrics.refresh.button\">Refresh</span>\n    </button>\n  </h2>\n\n  <h3 jhiTranslate=\"metrics.jvm.title\">JVM Metrics</h3>\n\n  <div class=\"row\" *ngIf=\"metrics && !updatingMetrics\">\n    <jhi-jvm-memory class=\"col-md-4\" [updating]=\"updatingMetrics\" [jvmMemoryMetrics]=\"metrics.jvm\"></jhi-jvm-memory>\n\n    <jhi-jvm-threads class=\"col-md-4\" [threads]=\"threads\"></jhi-jvm-threads>\n\n    <jhi-metrics-system class=\"col-md-4\" [updating]=\"updatingMetrics\" [systemMetrics]=\"metrics.processMetrics\"></jhi-metrics-system>\n  </div>\n\n  <jhi-metrics-garbagecollector\n    *ngIf=\"metrics && metricsKeyExists('garbageCollector')\"\n    [updating]=\"updatingMetrics\"\n    [garbageCollectorMetrics]=\"metrics.garbageCollector\"\n  ></jhi-metrics-garbagecollector>\n\n  <div class=\"well well-lg\" *ngIf=\"updatingMetrics\" jhiTranslate=\"metrics.updating\">Updating...</div>\n\n  <jhi-metrics-request\n    *ngIf=\"metrics && metricsKeyExists('http.server.requests')\"\n    [updating]=\"updatingMetrics\"\n    [requestMetrics]=\"metrics['http.server.requests']\"\n  ></jhi-metrics-request>\n\n  <jhi-metrics-endpoints-requests\n    *ngIf=\"metrics && metricsKeyExists('services')\"\n    [updating]=\"updatingMetrics\"\n    [endpointsRequestsMetrics]=\"metrics.services\"\n  ></jhi-metrics-endpoints-requests>\n\n  <jhi-metrics-cache\n    *ngIf=\"metrics && metricsKeyExists('cache')\"\n    [updating]=\"updatingMetrics\"\n    [cacheMetrics]=\"metrics.cache\"\n  ></jhi-metrics-cache>\n\n  <jhi-metrics-datasource\n    *ngIf=\"metrics && metricsKeyExistsAndObjectNotEmpty('databases')\"\n    [updating]=\"updatingMetrics\"\n    [datasourceMetrics]=\"metrics.databases\"\n  ></jhi-metrics-datasource>\n</div>\n";

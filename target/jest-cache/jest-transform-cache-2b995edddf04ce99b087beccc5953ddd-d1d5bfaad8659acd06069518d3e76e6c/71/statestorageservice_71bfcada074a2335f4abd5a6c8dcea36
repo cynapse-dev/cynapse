@@ -1,0 +1,357 @@
+9f7594f3938ba957c9ad175128a04420
+"use strict";
+
+/* istanbul ignore next */
+function cov_buharrzuq() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/core/auth/state-storage.service.ts";
+  var hash = "8eac1f93c44b274871157988653b9f22937df2b7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/core/auth/state-storage.service.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 37
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 25
+        },
+        end: {
+          line: 6,
+          column: 50
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 26
+        },
+        end: {
+          line: 21,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 47
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 44
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 61
+        }
+      },
+      "9": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 66
+        }
+      },
+      "10": {
+        start: {
+          line: 19,
+          column: 8
+        },
+        end: {
+          line: 19,
+          column: 56
+        }
+      },
+      "11": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 24
+        }
+      },
+      "12": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 50
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 33
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 12,
+            column: 4
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 12,
+            column: 18
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        line: 12
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 15,
+            column: 4
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 13
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        line: 15
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 18,
+            column: 4
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 15
+          },
+          end: {
+            line: 20,
+            column: 5
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/core/auth/state-storage.service.ts",
+      mappings: ";;;;AAAA,wCAA2C;AAC3C,mDAAuD;AAGvD,IAAa,mBAAmB,GAAhC,MAAa,mBAAmB;IAG9B,YAAoB,eAAsC;QAAtC,oBAAe,GAAf,eAAe,CAAuB;QAFlD,mBAAc,GAAG,aAAa,CAAC;IAEsB,CAAC;IAE9D,QAAQ,CAAC,GAAW;QAClB,IAAI,CAAC,eAAe,CAAC,KAAK,CAAC,IAAI,CAAC,cAAc,EAAE,GAAG,CAAC,CAAC;IACvD,CAAC;IAED,MAAM;QACJ,OAAO,IAAI,CAAC,eAAe,CAAC,QAAQ,CAAC,IAAI,CAAC,cAAc,CAAkB,CAAC;IAC7E,CAAC;IAED,QAAQ;QACN,IAAI,CAAC,eAAe,CAAC,KAAK,CAAC,IAAI,CAAC,cAAc,CAAC,CAAC;IAClD,CAAC;CACF,CAAA;AAhBY,mBAAmB;IAD/B,iBAAU,CAAC,EAAE,UAAU,EAAE,MAAM,EAAE,CAAC;6CAII,sCAAqB;GAH/C,mBAAmB,CAgB/B;AAhBY,kDAAmB",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/core/auth/state-storage.service.ts"],
+      sourcesContent: ["import { Injectable } from '@angular/core';\nimport { SessionStorageService } from 'ngx-webstorage';\n\n@Injectable({ providedIn: 'root' })\nexport class StateStorageService {\n  private previousUrlKey = 'previousUrl';\n\n  constructor(private $sessionStorage: SessionStorageService) {}\n\n  storeUrl(url: string): void {\n    this.$sessionStorage.store(this.previousUrlKey, url);\n  }\n\n  getUrl(): string | null {\n    return this.$sessionStorage.retrieve(this.previousUrlKey) as string | null;\n  }\n\n  clearUrl(): void {\n    this.$sessionStorage.clear(this.previousUrlKey);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "8eac1f93c44b274871157988653b9f22937df2b7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_buharrzuq = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_buharrzuq();
+cov_buharrzuq().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_buharrzuq().s[1]++;
+exports.StateStorageService = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_buharrzuq().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_buharrzuq().s[3]++, require("@angular/core"));
+const ngx_webstorage_1 =
+/* istanbul ignore next */
+(cov_buharrzuq().s[4]++, require("ngx-webstorage"));
+
+/* istanbul ignore next */
+cov_buharrzuq().s[5]++;
+let StateStorageService = class StateStorageService {
+  constructor($sessionStorage) {
+    /* istanbul ignore next */
+    cov_buharrzuq().f[0]++;
+    cov_buharrzuq().s[6]++;
+    this.$sessionStorage = $sessionStorage;
+
+    /* istanbul ignore next */
+    cov_buharrzuq().s[7]++;
+    this.previousUrlKey = 'previousUrl';
+  }
+
+  storeUrl(url) {
+    /* istanbul ignore next */
+    cov_buharrzuq().f[1]++;
+    cov_buharrzuq().s[8]++;
+    this.$sessionStorage.store(this.previousUrlKey, url);
+  }
+
+  getUrl() {
+    /* istanbul ignore next */
+    cov_buharrzuq().f[2]++;
+    cov_buharrzuq().s[9]++;
+    return this.$sessionStorage.retrieve(this.previousUrlKey);
+  }
+
+  clearUrl() {
+    /* istanbul ignore next */
+    cov_buharrzuq().f[3]++;
+    cov_buharrzuq().s[10]++;
+    this.$sessionStorage.clear(this.previousUrlKey);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_buharrzuq().s[11]++;
+StateStorageService = tslib_1.__decorate([core_1.Injectable({
+  providedIn: 'root'
+}), tslib_1.__metadata("design:paramtypes", [ngx_webstorage_1.SessionStorageService])], StateStorageService);
+
+/* istanbul ignore next */
+cov_buharrzuq().s[12]++;
+exports.StateStorageService = StateStorageService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9jb3JlL2F1dGgvc3RhdGUtc3RvcmFnZS5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWNJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWRKLE1BQUEsTUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBO0FBQ0EsTUFBQSxnQkFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGdCQUFBLENBQUEsQ0FBQTs7OztBQUdBLElBQWEsbUJBQW1CLEdBQWhDLE1BQWEsbUJBQWIsQ0FBZ0M7QUFHOUIsRUFBQSxXQUFBLENBQW9CLGVBQXBCLEVBQTBEO0FBQUE7QUFBQTtBQUFBO0FBQXRDLFNBQUEsZUFBQSxHQUFBLGVBQUE7O0FBQXNDO0FBQUE7QUFGbEQsU0FBQSxjQUFBLEdBQWlCLGFBQWpCO0FBRXNEOztBQUU5RCxFQUFBLFFBQVEsQ0FBQyxHQUFELEVBQVk7QUFBQTtBQUFBO0FBQUE7QUFDbEIsU0FBSyxlQUFMLENBQXFCLEtBQXJCLENBQTJCLEtBQUssY0FBaEMsRUFBZ0QsR0FBaEQ7QUFDRDs7QUFFRCxFQUFBLE1BQU0sR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNKLFdBQU8sS0FBSyxlQUFMLENBQXFCLFFBQXJCLENBQThCLEtBQUssY0FBbkMsQ0FBUDtBQUNEOztBQUVELEVBQUEsUUFBUSxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ04sU0FBSyxlQUFMLENBQXFCLEtBQXJCLENBQTJCLEtBQUssY0FBaEM7QUFDRDs7QUFmNkIsQ0FBaEM7Ozs7QUFBYSxtQkFBbUIsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBRC9CLE1BQUEsQ0FBQSxVQUFBLENBQVc7QUFBRSxFQUFBLFVBQVUsRUFBRTtBQUFkLENBQVgsQ0FDK0IsRSx5Q0FHTyxnQkFBQSxDQUFBLHFCLEVBSFAsQ0FBQSxFQUFuQixtQkFBbUIsQ0FBbkI7Ozs7QUFBQSxPQUFBLENBQUEsbUJBQUEsR0FBQSxtQkFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFNlc3Npb25TdG9yYWdlU2VydmljZSB9IGZyb20gJ25neC13ZWJzdG9yYWdlJztcblxuQEluamVjdGFibGUoeyBwcm92aWRlZEluOiAncm9vdCcgfSlcbmV4cG9ydCBjbGFzcyBTdGF0ZVN0b3JhZ2VTZXJ2aWNlIHtcbiAgcHJpdmF0ZSBwcmV2aW91c1VybEtleSA9ICdwcmV2aW91c1VybCc7XG5cbiAgY29uc3RydWN0b3IocHJpdmF0ZSAkc2Vzc2lvblN0b3JhZ2U6IFNlc3Npb25TdG9yYWdlU2VydmljZSkge31cblxuICBzdG9yZVVybCh1cmw6IHN0cmluZyk6IHZvaWQge1xuICAgIHRoaXMuJHNlc3Npb25TdG9yYWdlLnN0b3JlKHRoaXMucHJldmlvdXNVcmxLZXksIHVybCk7XG4gIH1cblxuICBnZXRVcmwoKTogc3RyaW5nIHwgbnVsbCB7XG4gICAgcmV0dXJuIHRoaXMuJHNlc3Npb25TdG9yYWdlLnJldHJpZXZlKHRoaXMucHJldmlvdXNVcmxLZXkpIGFzIHN0cmluZyB8IG51bGw7XG4gIH1cblxuICBjbGVhclVybCgpOiB2b2lkIHtcbiAgICB0aGlzLiRzZXNzaW9uU3RvcmFnZS5jbGVhcih0aGlzLnByZXZpb3VzVXJsS2V5KTtcbiAgfVxufVxuIl19

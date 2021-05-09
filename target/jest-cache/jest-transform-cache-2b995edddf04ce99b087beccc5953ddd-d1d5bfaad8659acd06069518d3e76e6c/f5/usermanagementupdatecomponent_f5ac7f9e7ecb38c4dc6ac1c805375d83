@@ -1,0 +1,51 @@
+0549e275dfd47c4c93153c0516138f70
+/* istanbul ignore next */
+function cov_1bjo6h1otq() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/update/user-management-update.component.html";
+  var hash = "b31b6bb4b1783b3e363ca94b03db1a2c3ee97c3c";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/update/user-management-update.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 6798
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "b31b6bb4b1783b3e363ca94b03db1a2c3ee97c3c"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1bjo6h1otq = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1bjo6h1otq();
+cov_1bjo6h1otq().s[0]++;
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-8\">\n    <form name=\"editForm\" role=\"form\" novalidate (ngSubmit)=\"save()\" [formGroup]=\"editForm\">\n      <h2 id=\"myUserLabel\" jhiTranslate=\"userManagement.home.createOrEditLabel\">Create or edit a User</h2>\n\n      <div *ngIf=\"user\">\n        <jhi-alert-error></jhi-alert-error>\n\n        <div class=\"form-group\" [hidden]=\"!user.id\">\n          <label jhiTranslate=\"global.field.id\">ID</label>\n          <input type=\"text\" class=\"form-control\" name=\"id\" formControlName=\"id\" readonly />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"userManagement.login\">Login</label>\n          <input type=\"text\" class=\"form-control\" name=\"login\" formControlName=\"login\" />\n\n          <div *ngIf=\"editForm.get('login')!.invalid && (editForm.get('login')!.dirty || editForm.get('login')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('login')?.errors?.required\" jhiTranslate=\"entity.validation.required\">\n              This field is required.\n            </small>\n\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('login')?.errors?.maxlength\"\n              jhiTranslate=\"entity.validation.maxlength\"\n              [translateValues]=\"{ max: 50 }\"\n            >\n              This field cannot be longer than 50 characters.\n            </small>\n\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('login')?.errors?.pattern\"\n              jhiTranslate=\"entity.validation.patternLogin\"\n            >\n              This field can only contain letters, digits and e-mail addresses.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"userManagement.firstName\">First Name</label>\n          <input type=\"text\" class=\"form-control\" name=\"firstName\" formControlName=\"firstName\" />\n\n          <div *ngIf=\"editForm.get('firstName')!.invalid && (editForm.get('firstName')!.dirty || editForm.get('firstName')!.touched)\">\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('firstName')?.errors?.maxlength\"\n              jhiTranslate=\"entity.validation.maxlength\"\n              [translateValues]=\"{ max: 50 }\"\n            >\n              This field cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label jhiTranslate=\"userManagement.lastName\">Last Name</label>\n          <input type=\"text\" class=\"form-control\" name=\"lastName\" formControlName=\"lastName\" />\n\n          <div *ngIf=\"editForm.get('lastName')!.invalid && (editForm.get('lastName')!.dirty || editForm.get('lastName')!.touched)\">\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('lastName')?.errors?.maxlength\"\n              jhiTranslate=\"entity.validation.maxlength\"\n              [translateValues]=\"{ max: 50 }\"\n            >\n              This field cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"userManagement.email\">Email</label>\n          <input type=\"email\" class=\"form-control\" name=\"email\" formControlName=\"email\" />\n\n          <div *ngIf=\"editForm.get('email')!.invalid && (editForm.get('email')!.dirty || editForm.get('email')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('email')?.errors?.required\" jhiTranslate=\"entity.validation.required\">\n              This field is required.\n            </small>\n\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('email')?.errors?.maxlength\"\n              jhiTranslate=\"entity.validation.maxlength\"\n              [translateValues]=\"{ max: 100 }\"\n            >\n              This field cannot be longer than 100 characters.\n            </small>\n\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('email')?.errors?.minlength\"\n              jhiTranslate=\"entity.validation.minlength\"\n              [translateValues]=\"{ min: 5 }\"\n            >\n              This field is required to be at least 5 characters.\n            </small>\n\n            <small\n              class=\"form-text text-danger\"\n              *ngIf=\"editForm.get('email')?.errors?.email\"\n              jhiTranslate=\"global.messages.validate.email.invalid\"\n            >\n              Your email is invalid.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-check\">\n          <label class=\"form-check-label\" for=\"activated\">\n            <input\n              class=\"form-check-input\"\n              [attr.disabled]=\"user.id === undefined ? 'disabled' : null\"\n              type=\"checkbox\"\n              id=\"activated\"\n              name=\"activated\"\n              formControlName=\"activated\"\n            />\n            <span jhiTranslate=\"userManagement.activated\">Activated</span>\n          </label>\n        </div>\n\n        <div class=\"form-group\" *ngIf=\"languages && languages.length > 0\">\n          <label jhiTranslate=\"userManagement.langKey\">Lang Key</label>\n          <select class=\"form-control\" id=\"langKey\" name=\"langKey\" formControlName=\"langKey\">\n            <option *ngFor=\"let language of languages\" [value]=\"language\">{{ language | findLanguageFromKey }}</option>\n          </select>\n        </div>\n\n        <div class=\"form-group\">\n          <label jhiTranslate=\"userManagement.profiles\">Profiles</label>\n          <select class=\"form-control\" multiple name=\"authority\" formControlName=\"authorities\">\n            <option *ngFor=\"let authority of authorities\" [value]=\"authority\">{{ authority }}</option>\n          </select>\n        </div>\n      </div>\n\n      <div *ngIf=\"user\">\n        <button type=\"button\" class=\"btn btn-secondary\" (click)=\"previousState()\">\n          <fa-icon icon=\"ban\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.cancel\">Cancel</span>\n        </button>\n\n        <button type=\"submit\" [disabled]=\"editForm.invalid || isSaving\" class=\"btn btn-primary\">\n          <fa-icon icon=\"save\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.save\">Save</span>\n        </button>\n      </div>\n    </form>\n  </div>\n</div>\n";

@@ -1,0 +1,69 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="forms">
+      <h2 data-cy="formsDetailsHeading"><span jhiTranslate="cynapseTechApp.forms.detail.title">Forms</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ forms.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.name">Name</span></dt>
+        <dd>
+          <span>{{ forms.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.cynapseId">Cynapse Id</span></dt>
+        <dd>
+          <span>{{ forms.cynapseId }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.emailId">Email Id</span></dt>
+        <dd>
+          <span>{{ forms.emailId }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.phoneNumber">Phone Number</span></dt>
+        <dd>
+          <span>{{ forms.phoneNumber }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.createdDate">Created Date</span></dt>
+        <dd>
+          <span>{{ forms.createdDate | formatMediumDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.referalCode">Referal Code</span></dt>
+        <dd>
+          <span>{{ forms.referalCode }}</span>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.formDocument">Form Document</span></dt>
+        <dd>
+          <div *ngIf="forms.formDocument">
+            <a (click)="openFile(forms.formDocument, forms.formDocumentContentType)">
+              <img
+                [src]="'data:' + forms.formDocumentContentType + ';base64,' + forms.formDocument"
+                style="max-width: 100%"
+                alt="forms image"
+              />
+            </a>
+            {{ forms.formDocumentContentType }}, {{ byteSize(forms.formDocument) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="cynapseTechApp.forms.user">User</span></dt>
+        <dd>
+          <span>{{ forms.user?.id }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/forms', forms.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

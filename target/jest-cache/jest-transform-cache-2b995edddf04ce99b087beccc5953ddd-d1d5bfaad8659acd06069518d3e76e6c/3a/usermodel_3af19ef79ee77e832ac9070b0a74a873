@@ -1,0 +1,214 @@
+f1ed0344f97c9b723106d2c26129649c
+"use strict";
+
+/* istanbul ignore next */
+function cov_24foyjs9e9() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/user/user.model.ts";
+  var hash = "f67de8083a16c728c71c9e0753d6ecac67f1c457";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/user/user.model.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 50
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 21
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 8
+        },
+        end: {
+          line: 7,
+          column: 27
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 20
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 4
+        },
+        end: {
+          line: 12,
+          column: 19
+        }
+      },
+      "6": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 14,
+          column: 46
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 27
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        line: 5
+      },
+      "1": {
+        name: "getUserIdentifier",
+        decl: {
+          start: {
+            line: 11,
+            column: 9
+          },
+          end: {
+            line: 11,
+            column: 26
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 33
+          },
+          end: {
+            line: 13,
+            column: 1
+          }
+        },
+        line: 11
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/entities/user/user.model.ts",
+      mappings: ";;;AAKA,MAAa,IAAI;IACf,YAAmB,EAAU,EAAS,KAAa;QAAhC,OAAE,GAAF,EAAE,CAAQ;QAAS,UAAK,GAAL,KAAK,CAAQ;IAAG,CAAC;CACxD;AAFD,oBAEC;AAED,SAAgB,iBAAiB,CAAC,IAAW;IAC3C,OAAO,IAAI,CAAC,EAAE,CAAC;AACjB,CAAC;AAFD,8CAEC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/entities/user/user.model.ts"],
+      sourcesContent: ["export interface IUser {\n  id?: number;\n  login?: string;\n}\n\nexport class User implements IUser {\n  constructor(public id: number, public login: string) {}\n}\n\nexport function getUserIdentifier(user: IUser): number | undefined {\n  return user.id;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "f67de8083a16c728c71c9e0753d6ecac67f1c457"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_24foyjs9e9 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_24foyjs9e9();
+cov_24foyjs9e9().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_24foyjs9e9().s[1]++;
+exports.getUserIdentifier = exports.User = void 0;
+
+class User {
+  constructor(id, login) {
+    /* istanbul ignore next */
+    cov_24foyjs9e9().f[0]++;
+    cov_24foyjs9e9().s[2]++;
+    this.id = id;
+
+    /* istanbul ignore next */
+    cov_24foyjs9e9().s[3]++;
+    this.login = login;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_24foyjs9e9().s[4]++;
+exports.User = User;
+
+function getUserIdentifier(user) {
+  /* istanbul ignore next */
+  cov_24foyjs9e9().f[1]++;
+  cov_24foyjs9e9().s[5]++;
+  return user.id;
+}
+
+/* istanbul ignore next */
+cov_24foyjs9e9().s[6]++;
+exports.getUserIdentifier = getUserIdentifier;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9lbnRpdGllcy91c2VyL3VzZXIubW9kZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUtBLE1BQWEsSUFBYixDQUFpQjtBQUNmLEVBQUEsV0FBQSxDQUFtQixFQUFuQixFQUFzQyxLQUF0QyxFQUFtRDtBQUFBO0FBQUE7QUFBQTtBQUFoQyxTQUFBLEVBQUEsR0FBQSxFQUFBOztBQUFnQztBQUFBO0FBQWIsU0FBQSxLQUFBLEdBQUEsS0FBQTtBQUFpQjs7QUFEeEM7Ozs7QUFBakIsT0FBQSxDQUFBLElBQUEsR0FBQSxJQUFBOztBQUlBLFNBQWdCLGlCQUFoQixDQUFrQyxJQUFsQyxFQUE2QztBQUFBO0FBQUE7QUFBQTtBQUMzQyxTQUFPLElBQUksQ0FBQyxFQUFaO0FBQ0Q7Ozs7QUFGRCxPQUFBLENBQUEsaUJBQUEsR0FBQSxpQkFBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgSVVzZXIge1xuICBpZD86IG51bWJlcjtcbiAgbG9naW4/OiBzdHJpbmc7XG59XG5cbmV4cG9ydCBjbGFzcyBVc2VyIGltcGxlbWVudHMgSVVzZXIge1xuICBjb25zdHJ1Y3RvcihwdWJsaWMgaWQ6IG51bWJlciwgcHVibGljIGxvZ2luOiBzdHJpbmcpIHt9XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBnZXRVc2VySWRlbnRpZmllcih1c2VyOiBJVXNlcik6IG51bWJlciB8IHVuZGVmaW5lZCB7XG4gIHJldHVybiB1c2VyLmlkO1xufVxuIl19

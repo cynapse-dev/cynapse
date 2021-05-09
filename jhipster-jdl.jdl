@@ -1,0 +1,14 @@
+entity Forms{
+name String,
+cynapseId String,
+emailId String,
+phoneNumber String,
+createdDate LocalDate,
+referalCode String,
+
+formDocument ImageBlob,
+}
+
+relationship OneToOne{
+Forms{User} to User
+}

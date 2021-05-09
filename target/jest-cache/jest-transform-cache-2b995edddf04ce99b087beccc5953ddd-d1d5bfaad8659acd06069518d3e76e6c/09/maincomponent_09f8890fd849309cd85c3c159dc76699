@@ -1,0 +1,51 @@
+9f775be1d1243889b8e19c02bc04993b
+/* istanbul ignore next */
+function cov_14nyotni7w() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/layouts/main/main.component.html";
+  var hash = "a96c10306237537bc2accadf52258acd8e473eb7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/layouts/main/main.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 275
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a96c10306237537bc2accadf52258acd8e473eb7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_14nyotni7w = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_14nyotni7w();
+cov_14nyotni7w().s[0]++;
+module.exports = "<jhi-page-ribbon></jhi-page-ribbon>\n\n<div>\n  <router-outlet name=\"navbar\"></router-outlet>\n</div>\n\n<div class=\"container-fluid\">\n  <div class=\"card jh-card\">\n    <router-outlet></router-outlet>\n  </div>\n\n  <jhi-footer></jhi-footer>\n</div>\n";

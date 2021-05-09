@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CacheConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Cynapse Tech</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.myapp.config</a> &gt; <span class="el_source">CacheConfiguration.java</span></div><h1>CacheConfiguration.java</h1><pre class="source lang-java linenums">package com.mycompany.myapp.config;
+
+import java.time.Duration;
+import org.ehcache.config.builders.*;
+import org.ehcache.jsr107.Eh107Configuration;
+import org.hibernate.cache.jcache.ConfigSettings;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernatePropertiesCustomizer;
+import org.springframework.boot.info.BuildProperties;
+import org.springframework.boot.info.GitProperties;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.interceptor.KeyGenerator;
+import org.springframework.context.annotation.*;
+import tech.jhipster.config.JHipsterProperties;
+import tech.jhipster.config.cache.PrefixedKeyGenerator;
+
+@Configuration
+@EnableCaching
+public class CacheConfiguration {
+
+    private GitProperties gitProperties;
+    private BuildProperties buildProperties;
+    private final javax.cache.configuration.Configuration&lt;Object, Object&gt; jcacheConfiguration;
+
+<span class="nc" id="L26">    public CacheConfiguration(JHipsterProperties jHipsterProperties) {</span>
+<span class="nc" id="L27">        JHipsterProperties.Cache.Ehcache ehcache = jHipsterProperties.getCache().getEhcache();</span>
+
+<span class="nc" id="L29">        jcacheConfiguration =</span>
+<span class="nc" id="L30">            Eh107Configuration.fromEhcacheCacheConfiguration(</span>
+                CacheConfigurationBuilder
+<span class="nc" id="L32">                    .newCacheConfigurationBuilder(Object.class, Object.class, ResourcePoolsBuilder.heap(ehcache.getMaxEntries()))</span>
+<span class="nc" id="L33">                    .withExpiry(ExpiryPolicyBuilder.timeToLiveExpiration(Duration.ofSeconds(ehcache.getTimeToLiveSeconds())))</span>
+<span class="nc" id="L34">                    .build()</span>
+            );
+<span class="nc" id="L36">    }</span>
+
+    @Bean
+    public HibernatePropertiesCustomizer hibernatePropertiesCustomizer(javax.cache.CacheManager cacheManager) {
+<span class="nc" id="L40">        return hibernateProperties -&gt; hibernateProperties.put(ConfigSettings.CACHE_MANAGER, cacheManager);</span>
+    }
+
+    @Bean
+    public JCacheManagerCustomizer cacheManagerCustomizer() {
+<span class="nc" id="L45">        return cm -&gt; {</span>
+<span class="nc" id="L46">            createCache(cm, com.mycompany.myapp.repository.UserRepository.USERS_BY_LOGIN_CACHE);</span>
+<span class="nc" id="L47">            createCache(cm, com.mycompany.myapp.repository.UserRepository.USERS_BY_EMAIL_CACHE);</span>
+<span class="nc" id="L48">            createCache(cm, com.mycompany.myapp.domain.User.class.getName());</span>
+<span class="nc" id="L49">            createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());</span>
+<span class="nc" id="L50">            createCache(cm, com.mycompany.myapp.domain.User.class.getName() + &quot;.authorities&quot;);</span>
+<span class="nc" id="L51">            createCache(cm, com.mycompany.myapp.domain.Forms.class.getName());</span>
+            // jhipster-needle-ehcache-add-entry
+<span class="nc" id="L53">        };</span>
+    }
+
+    private void createCache(javax.cache.CacheManager cm, String cacheName) {
+<span class="nc" id="L57">        javax.cache.Cache&lt;Object, Object&gt; cache = cm.getCache(cacheName);</span>
+<span class="nc bnc" id="L58" title="All 2 branches missed.">        if (cache != null) {</span>
+<span class="nc" id="L59">            cache.clear();</span>
+        } else {
+<span class="nc" id="L61">            cm.createCache(cacheName, jcacheConfiguration);</span>
+        }
+<span class="nc" id="L63">    }</span>
+
+    @Autowired(required = false)
+    public void setGitProperties(GitProperties gitProperties) {
+<span class="nc" id="L67">        this.gitProperties = gitProperties;</span>
+<span class="nc" id="L68">    }</span>
+
+    @Autowired(required = false)
+    public void setBuildProperties(BuildProperties buildProperties) {
+<span class="nc" id="L72">        this.buildProperties = buildProperties;</span>
+<span class="nc" id="L73">    }</span>
+
+    @Bean
+    public KeyGenerator keyGenerator() {
+<span class="nc" id="L77">        return new PrefixedKeyGenerator(this.gitProperties, this.buildProperties);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,0 +1,334 @@
+0345c67f6474230a6d8d505b1faf679c
+"use strict";
+
+/* istanbul ignore next */
+function cov_1putm2nmg7() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/forms.model.ts";
+  var hash = "1f66700b77f42619b7b2899ace0321b603a0bc35";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/forms.model.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 52
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 21
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 8
+        },
+        end: {
+          line: 7,
+          column: 25
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 35
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 31
+        }
+      },
+      "6": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 39
+        }
+      },
+      "7": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 39
+        }
+      },
+      "8": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 39
+        }
+      },
+      "9": {
+        start: {
+          line: 13,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 63
+        }
+      },
+      "10": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 41
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 25
+        }
+      },
+      "12": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 22
+        }
+      },
+      "13": {
+        start: {
+          line: 20,
+          column: 4
+        },
+        end: {
+          line: 20,
+          column: 20
+        }
+      },
+      "14": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 22,
+          column: 48
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 130
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        line: 5
+      },
+      "1": {
+        name: "getFormsIdentifier",
+        decl: {
+          start: {
+            line: 19,
+            column: 9
+          },
+          end: {
+            line: 19,
+            column: 27
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 35
+          },
+          end: {
+            line: 21,
+            column: 1
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/forms.model.ts",
+      mappings: ";;;AAgBA,MAAa,KAAK;IAChB,YACS,EAAW,EACX,IAAoB,EACpB,SAAyB,EACzB,OAAuB,EACvB,WAA2B,EAC3B,WAAgC,EAChC,WAA2B,EAC3B,uBAAuC,EACvC,YAA4B,EAC5B,IAAmB;QATnB,OAAE,GAAF,EAAE,CAAS;QACX,SAAI,GAAJ,IAAI,CAAgB;QACpB,cAAS,GAAT,SAAS,CAAgB;QACzB,YAAO,GAAP,OAAO,CAAgB;QACvB,gBAAW,GAAX,WAAW,CAAgB;QAC3B,gBAAW,GAAX,WAAW,CAAqB;QAChC,gBAAW,GAAX,WAAW,CAAgB;QAC3B,4BAAuB,GAAvB,uBAAuB,CAAgB;QACvC,iBAAY,GAAZ,YAAY,CAAgB;QAC5B,SAAI,GAAJ,IAAI,CAAe;IACzB,CAAC;CACL;AAbD,sBAaC;AAED,SAAgB,kBAAkB,CAAC,KAAa;IAC9C,OAAO,KAAK,CAAC,EAAE,CAAC;AAClB,CAAC;AAFD,gDAEC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/forms.model.ts"],
+      sourcesContent: ["import * as dayjs from 'dayjs';\nimport { IUser } from 'app/entities/user/user.model';\n\nexport interface IForms {\n  id?: number;\n  name?: string | null;\n  cynapseId?: string | null;\n  emailId?: string | null;\n  phoneNumber?: string | null;\n  createdDate?: dayjs.Dayjs | null;\n  referalCode?: string | null;\n  formDocumentContentType?: string | null;\n  formDocument?: string | null;\n  user?: IUser | null;\n}\n\nexport class Forms implements IForms {\n  constructor(\n    public id?: number,\n    public name?: string | null,\n    public cynapseId?: string | null,\n    public emailId?: string | null,\n    public phoneNumber?: string | null,\n    public createdDate?: dayjs.Dayjs | null,\n    public referalCode?: string | null,\n    public formDocumentContentType?: string | null,\n    public formDocument?: string | null,\n    public user?: IUser | null\n  ) {}\n}\n\nexport function getFormsIdentifier(forms: IForms): number | undefined {\n  return forms.id;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "1f66700b77f42619b7b2899ace0321b603a0bc35"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1putm2nmg7 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1putm2nmg7();
+cov_1putm2nmg7().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1putm2nmg7().s[1]++;
+exports.getFormsIdentifier = exports.Forms = void 0;
+
+class Forms {
+  constructor(id, name, cynapseId, emailId, phoneNumber, createdDate, referalCode, formDocumentContentType, formDocument, user) {
+    /* istanbul ignore next */
+    cov_1putm2nmg7().f[0]++;
+    cov_1putm2nmg7().s[2]++;
+    this.id = id;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[3]++;
+    this.name = name;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[4]++;
+    this.cynapseId = cynapseId;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[5]++;
+    this.emailId = emailId;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[6]++;
+    this.phoneNumber = phoneNumber;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[7]++;
+    this.createdDate = createdDate;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[8]++;
+    this.referalCode = referalCode;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[9]++;
+    this.formDocumentContentType = formDocumentContentType;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[10]++;
+    this.formDocument = formDocument;
+
+    /* istanbul ignore next */
+    cov_1putm2nmg7().s[11]++;
+    this.user = user;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_1putm2nmg7().s[12]++;
+exports.Forms = Forms;
+
+function getFormsIdentifier(forms) {
+  /* istanbul ignore next */
+  cov_1putm2nmg7().f[1]++;
+  cov_1putm2nmg7().s[13]++;
+  return forms.id;
+}
+
+/* istanbul ignore next */
+cov_1putm2nmg7().s[14]++;
+exports.getFormsIdentifier = getFormsIdentifier;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9lbnRpdGllcy9mb3Jtcy9mb3Jtcy5tb2RlbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTRCTTs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBWk4sTUFBYSxLQUFiLENBQWtCO0FBQ2hCLEVBQUEsV0FBQSxDQUNTLEVBRFQsRUFFUyxJQUZULEVBR1MsU0FIVCxFQUlTLE9BSlQsRUFLUyxXQUxULEVBTVMsV0FOVCxFQU9TLFdBUFQsRUFRUyx1QkFSVCxFQVNTLFlBVFQsRUFVUyxJQVZULEVBVTRCO0FBQUE7QUFBQTtBQUFBO0FBVG5CLFNBQUEsRUFBQSxHQUFBLEVBQUE7O0FBU21CO0FBQUE7QUFSbkIsU0FBQSxJQUFBLEdBQUEsSUFBQTs7QUFRbUI7QUFBQTtBQVBuQixTQUFBLFNBQUEsR0FBQSxTQUFBOztBQU9tQjtBQUFBO0FBTm5CLFNBQUEsT0FBQSxHQUFBLE9BQUE7O0FBTW1CO0FBQUE7QUFMbkIsU0FBQSxXQUFBLEdBQUEsV0FBQTs7QUFLbUI7QUFBQTtBQUpuQixTQUFBLFdBQUEsR0FBQSxXQUFBOztBQUltQjtBQUFBO0FBSG5CLFNBQUEsV0FBQSxHQUFBLFdBQUE7O0FBR21CO0FBQUE7QUFGbkIsU0FBQSx1QkFBQSxHQUFBLHVCQUFBOztBQUVtQjtBQUFBO0FBRG5CLFNBQUEsWUFBQSxHQUFBLFlBQUE7O0FBQ21CO0FBQUE7QUFBbkIsU0FBQSxJQUFBLEdBQUEsSUFBQTtBQUNMOztBQVpZOzs7O0FBQWxCLE9BQUEsQ0FBQSxLQUFBLEdBQUEsS0FBQTs7QUFlQSxTQUFnQixrQkFBaEIsQ0FBbUMsS0FBbkMsRUFBZ0Q7QUFBQTtBQUFBO0FBQUE7QUFDOUMsU0FBTyxLQUFLLENBQUMsRUFBYjtBQUNEOzs7O0FBRkQsT0FBQSxDQUFBLGtCQUFBLEdBQUEsa0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBkYXlqcyBmcm9tICdkYXlqcyc7XG5pbXBvcnQgeyBJVXNlciB9IGZyb20gJ2FwcC9lbnRpdGllcy91c2VyL3VzZXIubW9kZWwnO1xuXG5leHBvcnQgaW50ZXJmYWNlIElGb3JtcyB7XG4gIGlkPzogbnVtYmVyO1xuICBuYW1lPzogc3RyaW5nIHwgbnVsbDtcbiAgY3luYXBzZUlkPzogc3RyaW5nIHwgbnVsbDtcbiAgZW1haWxJZD86IHN0cmluZyB8IG51bGw7XG4gIHBob25lTnVtYmVyPzogc3RyaW5nIHwgbnVsbDtcbiAgY3JlYXRlZERhdGU/OiBkYXlqcy5EYXlqcyB8IG51bGw7XG4gIHJlZmVyYWxDb2RlPzogc3RyaW5nIHwgbnVsbDtcbiAgZm9ybURvY3VtZW50Q29udGVudFR5cGU/OiBzdHJpbmcgfCBudWxsO1xuICBmb3JtRG9jdW1lbnQ/OiBzdHJpbmcgfCBudWxsO1xuICB1c2VyPzogSVVzZXIgfCBudWxsO1xufVxuXG5leHBvcnQgY2xhc3MgRm9ybXMgaW1wbGVtZW50cyBJRm9ybXMge1xuICBjb25zdHJ1Y3RvcihcbiAgICBwdWJsaWMgaWQ/OiBudW1iZXIsXG4gICAgcHVibGljIG5hbWU/OiBzdHJpbmcgfCBudWxsLFxuICAgIHB1YmxpYyBjeW5hcHNlSWQ/OiBzdHJpbmcgfCBudWxsLFxuICAgIHB1YmxpYyBlbWFpbElkPzogc3RyaW5nIHwgbnVsbCxcbiAgICBwdWJsaWMgcGhvbmVOdW1iZXI/OiBzdHJpbmcgfCBudWxsLFxuICAgIHB1YmxpYyBjcmVhdGVkRGF0ZT86IGRheWpzLkRheWpzIHwgbnVsbCxcbiAgICBwdWJsaWMgcmVmZXJhbENvZGU/OiBzdHJpbmcgfCBudWxsLFxuICAgIHB1YmxpYyBmb3JtRG9jdW1lbnRDb250ZW50VHlwZT86IHN0cmluZyB8IG51bGwsXG4gICAgcHVibGljIGZvcm1Eb2N1bWVudD86IHN0cmluZyB8IG51bGwsXG4gICAgcHVibGljIHVzZXI/OiBJVXNlciB8IG51bGxcbiAgKSB7fVxufVxuXG5leHBvcnQgZnVuY3Rpb24gZ2V0Rm9ybXNJZGVudGlmaWVyKGZvcm1zOiBJRm9ybXMpOiBudW1iZXIgfCB1bmRlZmluZWQge1xuICByZXR1cm4gZm9ybXMuaWQ7XG59XG4iXX0=

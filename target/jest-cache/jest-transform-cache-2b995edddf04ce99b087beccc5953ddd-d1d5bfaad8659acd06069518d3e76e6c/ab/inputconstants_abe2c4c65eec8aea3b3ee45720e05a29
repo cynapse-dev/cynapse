@@ -1,0 +1,108 @@
+e64787f128f5613abd717a7a6e2be263
+"use strict";
+
+/* istanbul ignore next */
+function cov_1la2cieo0i() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/config/input.constants.ts";
+  var hash = "e34c86521aa15d4131de0df13be79f60db0195ef";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/config/input.constants.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 56
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 35
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 46
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/config/input.constants.ts",
+      mappings: ";;;AAAa,QAAA,WAAW,GAAG,YAAY,CAAC;AAC3B,QAAA,gBAAgB,GAAG,kBAAkB,CAAC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/config/input.constants.ts"],
+      sourcesContent: ["export const DATE_FORMAT = 'YYYY-MM-DD';\nexport const DATE_TIME_FORMAT = 'YYYY-MM-DDTHH:mm';\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e34c86521aa15d4131de0df13be79f60db0195ef"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1la2cieo0i = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1la2cieo0i();
+cov_1la2cieo0i().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1la2cieo0i().s[1]++;
+exports.DATE_TIME_FORMAT = exports.DATE_FORMAT = void 0;
+
+/* istanbul ignore next */
+cov_1la2cieo0i().s[2]++;
+exports.DATE_FORMAT = 'YYYY-MM-DD';
+
+/* istanbul ignore next */
+cov_1la2cieo0i().s[3]++;
+exports.DATE_TIME_FORMAT = 'YYYY-MM-DDTHH:mm';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9jb25maWcvaW5wdXQuY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQWEsT0FBQSxDQUFBLFdBQUEsR0FBYyxZQUFkOzs7O0FBQ0EsT0FBQSxDQUFBLGdCQUFBLEdBQW1CLGtCQUFuQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBEQVRFX0ZPUk1BVCA9ICdZWVlZLU1NLUREJztcbmV4cG9ydCBjb25zdCBEQVRFX1RJTUVfRk9STUFUID0gJ1lZWVktTU0tRERUSEg6bW0nO1xuIl19

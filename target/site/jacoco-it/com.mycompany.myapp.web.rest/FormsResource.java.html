@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FormsResource.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Cynapse Tech</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.myapp.web.rest</a> &gt; <span class="el_source">FormsResource.java</span></div><h1>FormsResource.java</h1><pre class="source lang-java linenums">package com.mycompany.myapp.web.rest;
+
+import com.mycompany.myapp.domain.Forms;
+import com.mycompany.myapp.repository.FormsRepository;
+import com.mycompany.myapp.web.rest.errors.BadRequestAlertException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
+import tech.jhipster.web.util.HeaderUtil;
+import tech.jhipster.web.util.ResponseUtil;
+
+/**
+ * REST controller for managing {@link com.mycompany.myapp.domain.Forms}.
+ */
+@RestController
+@RequestMapping(&quot;/api&quot;)
+@Transactional
+public class FormsResource {
+
+<span class="fc" id="L28">    private final Logger log = LoggerFactory.getLogger(FormsResource.class);</span>
+
+    private static final String ENTITY_NAME = &quot;forms&quot;;
+
+    @Value(&quot;${jhipster.clientApp.name}&quot;)
+    private String applicationName;
+
+    private final FormsRepository formsRepository;
+
+<span class="fc" id="L37">    public FormsResource(FormsRepository formsRepository) {</span>
+<span class="fc" id="L38">        this.formsRepository = formsRepository;</span>
+<span class="fc" id="L39">    }</span>
+
+    /**
+     * {@code POST  /forms} : Create a new forms.
+     *
+     * @param forms the forms to create.
+     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new forms, or with status {@code 400 (Bad Request)} if the forms has already an ID.
+     * @throws URISyntaxException if the Location URI syntax is incorrect.
+     */
+    @PostMapping(&quot;/forms&quot;)
+    public ResponseEntity&lt;Forms&gt; createForms(@RequestBody Forms forms) throws URISyntaxException {
+<span class="fc" id="L50">        log.debug(&quot;REST request to save Forms : {}&quot;, forms);</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        if (forms.getId() != null) {</span>
+<span class="fc" id="L52">            throw new BadRequestAlertException(&quot;A new forms cannot already have an ID&quot;, ENTITY_NAME, &quot;idexists&quot;);</span>
+        }
+<span class="fc" id="L54">        Forms result = formsRepository.save(forms);</span>
+<span class="fc" id="L55">        return ResponseEntity</span>
+<span class="fc" id="L56">            .created(new URI(&quot;/api/forms/&quot; + result.getId()))</span>
+<span class="fc" id="L57">            .headers(HeaderUtil.createEntityCreationAlert(applicationName, true, ENTITY_NAME, result.getId().toString()))</span>
+<span class="fc" id="L58">            .body(result);</span>
+    }
+
+    /**
+     * {@code PUT  /forms/:id} : Updates an existing forms.
+     *
+     * @param id the id of the forms to save.
+     * @param forms the forms to update.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the updated forms,
+     * or with status {@code 400 (Bad Request)} if the forms is not valid,
+     * or with status {@code 500 (Internal Server Error)} if the forms couldn't be updated.
+     * @throws URISyntaxException if the Location URI syntax is incorrect.
+     */
+    @PutMapping(&quot;/forms/{id}&quot;)
+    public ResponseEntity&lt;Forms&gt; updateForms(@PathVariable(value = &quot;id&quot;, required = false) final Long id, @RequestBody Forms forms)
+        throws URISyntaxException {
+<span class="fc" id="L74">        log.debug(&quot;REST request to update Forms : {}, {}&quot;, id, forms);</span>
+<span class="pc bpc" id="L75" title="1 of 2 branches missed.">        if (forms.getId() == null) {</span>
+<span class="nc" id="L76">            throw new BadRequestAlertException(&quot;Invalid id&quot;, ENTITY_NAME, &quot;idnull&quot;);</span>
+        }
+<span class="fc bfc" id="L78" title="All 2 branches covered.">        if (!Objects.equals(id, forms.getId())) {</span>
+<span class="fc" id="L79">            throw new BadRequestAlertException(&quot;Invalid ID&quot;, ENTITY_NAME, &quot;idinvalid&quot;);</span>
+        }
+
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if (!formsRepository.existsById(id)) {</span>
+<span class="fc" id="L83">            throw new BadRequestAlertException(&quot;Entity not found&quot;, ENTITY_NAME, &quot;idnotfound&quot;);</span>
+        }
+
+<span class="fc" id="L86">        Forms result = formsRepository.save(forms);</span>
+<span class="fc" id="L87">        return ResponseEntity</span>
+<span class="fc" id="L88">            .ok()</span>
+<span class="fc" id="L89">            .headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, forms.getId().toString()))</span>
+<span class="fc" id="L90">            .body(result);</span>
+    }
+
+    /**
+     * {@code PATCH  /forms/:id} : Partial updates given fields of an existing forms, field will ignore if it is null
+     *
+     * @param id the id of the forms to save.
+     * @param forms the forms to update.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the updated forms,
+     * or with status {@code 400 (Bad Request)} if the forms is not valid,
+     * or with status {@code 404 (Not Found)} if the forms is not found,
+     * or with status {@code 500 (Internal Server Error)} if the forms couldn't be updated.
+     * @throws URISyntaxException if the Location URI syntax is incorrect.
+     */
+    @PatchMapping(value = &quot;/forms/{id}&quot;, consumes = &quot;application/merge-patch+json&quot;)
+    public ResponseEntity&lt;Forms&gt; partialUpdateForms(@PathVariable(value = &quot;id&quot;, required = false) final Long id, @RequestBody Forms forms)
+        throws URISyntaxException {
+<span class="fc" id="L107">        log.debug(&quot;REST request to partial update Forms partially : {}, {}&quot;, id, forms);</span>
+<span class="pc bpc" id="L108" title="1 of 2 branches missed.">        if (forms.getId() == null) {</span>
+<span class="nc" id="L109">            throw new BadRequestAlertException(&quot;Invalid id&quot;, ENTITY_NAME, &quot;idnull&quot;);</span>
+        }
+<span class="fc bfc" id="L111" title="All 2 branches covered.">        if (!Objects.equals(id, forms.getId())) {</span>
+<span class="fc" id="L112">            throw new BadRequestAlertException(&quot;Invalid ID&quot;, ENTITY_NAME, &quot;idinvalid&quot;);</span>
+        }
+
+<span class="fc bfc" id="L115" title="All 2 branches covered.">        if (!formsRepository.existsById(id)) {</span>
+<span class="fc" id="L116">            throw new BadRequestAlertException(&quot;Entity not found&quot;, ENTITY_NAME, &quot;idnotfound&quot;);</span>
+        }
+
+<span class="fc" id="L119">        Optional&lt;Forms&gt; result = formsRepository</span>
+<span class="fc" id="L120">            .findById(forms.getId())</span>
+<span class="fc" id="L121">            .map(</span>
+                existingForms -&gt; {
+<span class="pc bpc" id="L123" title="1 of 2 branches missed.">                    if (forms.getName() != null) {</span>
+<span class="fc" id="L124">                        existingForms.setName(forms.getName());</span>
+                    }
+<span class="pc bpc" id="L126" title="1 of 2 branches missed.">                    if (forms.getCynapseId() != null) {</span>
+<span class="fc" id="L127">                        existingForms.setCynapseId(forms.getCynapseId());</span>
+                    }
+<span class="pc bpc" id="L129" title="1 of 2 branches missed.">                    if (forms.getEmailId() != null) {</span>
+<span class="fc" id="L130">                        existingForms.setEmailId(forms.getEmailId());</span>
+                    }
+<span class="pc bpc" id="L132" title="1 of 2 branches missed.">                    if (forms.getPhoneNumber() != null) {</span>
+<span class="fc" id="L133">                        existingForms.setPhoneNumber(forms.getPhoneNumber());</span>
+                    }
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">                    if (forms.getCreatedDate() != null) {</span>
+<span class="fc" id="L136">                        existingForms.setCreatedDate(forms.getCreatedDate());</span>
+                    }
+<span class="fc bfc" id="L138" title="All 2 branches covered.">                    if (forms.getReferalCode() != null) {</span>
+<span class="fc" id="L139">                        existingForms.setReferalCode(forms.getReferalCode());</span>
+                    }
+<span class="fc bfc" id="L141" title="All 2 branches covered.">                    if (forms.getFormDocument() != null) {</span>
+<span class="fc" id="L142">                        existingForms.setFormDocument(forms.getFormDocument());</span>
+                    }
+<span class="fc bfc" id="L144" title="All 2 branches covered.">                    if (forms.getFormDocumentContentType() != null) {</span>
+<span class="fc" id="L145">                        existingForms.setFormDocumentContentType(forms.getFormDocumentContentType());</span>
+                    }
+
+<span class="fc" id="L148">                    return existingForms;</span>
+                }
+            )
+<span class="fc" id="L151">            .map(formsRepository::save);</span>
+
+<span class="fc" id="L153">        return ResponseUtil.wrapOrNotFound(</span>
+            result,
+<span class="fc" id="L155">            HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, forms.getId().toString())</span>
+        );
+    }
+
+    /**
+     * {@code GET  /forms} : get all the forms.
+     *
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of forms in body.
+     */
+    @GetMapping(&quot;/forms&quot;)
+    public List&lt;Forms&gt; getAllForms() {
+<span class="fc" id="L166">        log.debug(&quot;REST request to get all Forms&quot;);</span>
+<span class="fc" id="L167">        return formsRepository.findAll();</span>
+    }
+
+    /**
+     * {@code GET  /forms/:id} : get the &quot;id&quot; forms.
+     *
+     * @param id the id of the forms to retrieve.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the forms, or with status {@code 404 (Not Found)}.
+     */
+    @GetMapping(&quot;/forms/{id}&quot;)
+    public ResponseEntity&lt;Forms&gt; getForms(@PathVariable Long id) {
+<span class="fc" id="L178">        log.debug(&quot;REST request to get Forms : {}&quot;, id);</span>
+<span class="fc" id="L179">        Optional&lt;Forms&gt; forms = formsRepository.findById(id);</span>
+<span class="fc" id="L180">        return ResponseUtil.wrapOrNotFound(forms);</span>
+    }
+
+    /**
+     * {@code DELETE  /forms/:id} : delete the &quot;id&quot; forms.
+     *
+     * @param id the id of the forms to delete.
+     * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
+     */
+    @DeleteMapping(&quot;/forms/{id}&quot;)
+    public ResponseEntity&lt;Void&gt; deleteForms(@PathVariable Long id) {
+<span class="fc" id="L191">        log.debug(&quot;REST request to delete Forms : {}&quot;, id);</span>
+<span class="fc" id="L192">        formsRepository.deleteById(id);</span>
+<span class="fc" id="L193">        return ResponseEntity</span>
+<span class="fc" id="L194">            .noContent()</span>
+<span class="fc" id="L195">            .headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString()))</span>
+<span class="fc" id="L196">            .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

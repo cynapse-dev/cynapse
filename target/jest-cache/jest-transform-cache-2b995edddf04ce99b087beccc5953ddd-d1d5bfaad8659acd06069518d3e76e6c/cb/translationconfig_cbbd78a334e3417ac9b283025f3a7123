@@ -1,0 +1,384 @@
+ff16d06a89065fb88d017f8e06269921
+"use strict";
+
+/* istanbul ignore next */
+function cov_2nn0aowicp() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/config/translation.config.ts";
+  var hash = "2a0cfd60caad2bb5560863d8dd7bf459bdcf34ef";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/config/translation.config.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 153
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 22
+        },
+        end: {
+          line: 4,
+          column: 59
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 61
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 20
+        },
+        end: {
+          line: 8,
+          column: 30
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 63
+        }
+      },
+      "6": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 12,
+          column: 70
+        }
+      },
+      "7": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 15,
+          column: 162
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 0
+        },
+        end: {
+          line: 17,
+          column: 56
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 4
+        },
+        end: {
+          line: 19,
+          column: 47
+        }
+      },
+      "10": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 21,
+          column: 62
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 19
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "translatePartialLoader",
+        decl: {
+          start: {
+            line: 13,
+            column: 9
+          },
+          end: {
+            line: 13,
+            column: 31
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 38
+          },
+          end: {
+            line: 16,
+            column: 1
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "missingTranslationHandler",
+        decl: {
+          start: {
+            line: 18,
+            column: 9
+          },
+          end: {
+            line: 18,
+            column: 34
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 37
+          },
+          end: {
+            line: 20,
+            column: 1
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 88
+          },
+          end: {
+            line: 15,
+            column: 158
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 151
+          },
+          end: {
+            line: 15,
+            column: 153
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 156
+          },
+          end: {
+            line: 15,
+            column: 158
+          }
+        }],
+        line: 15
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 15,
+            column: 88
+          },
+          end: {
+            line: 15,
+            column: 148
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 88
+          },
+          end: {
+            line: 15,
+            column: 131
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 135
+          },
+          end: {
+            line: 15,
+            column: 148
+          }
+        }],
+        line: 15
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/config/translation.config.ts",
+      mappings: ";;;AAEA,4DAAiE;AAEpD,QAAA,0BAA0B,GAAG,uBAAuB,CAAC;AAElE,MAAa,6BAA6B;IACxC,MAAM,CAAC,MAAuC;QAC5C,MAAM,GAAG,GAAG,MAAM,CAAC,GAAG,CAAC;QACvB,OAAO,GAAG,kCAA0B,IAAI,GAAG,GAAG,CAAC;IACjD,CAAC;CACF;AALD,sEAKC;AAED,SAAgB,sBAAsB,CAAC,IAAgB;;IACrD,OAAO,IAAI,iCAAmB,CAAC,IAAI,EAAE,OAAO,EAAE,wBAAwB,MAAA,OAAO,CAAC,GAAG,CAAC,eAAe,mCAAI,EAAE,EAAE,CAAC,CAAC;AAC7G,CAAC;AAFD,wDAEC;AAED,SAAgB,yBAAyB;IACvC,OAAO,IAAI,6BAA6B,EAAE,CAAC;AAC7C,CAAC;AAFD,8DAEC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/config/translation.config.ts"],
+      sourcesContent: ["import { HttpClient } from '@angular/common/http';\nimport { MissingTranslationHandler, MissingTranslationHandlerParams, TranslateLoader } from '@ngx-translate/core';\nimport { TranslateHttpLoader } from '@ngx-translate/http-loader';\n\nexport const translationNotFoundMessage = 'translation-not-found';\n\nexport class MissingTranslationHandlerImpl implements MissingTranslationHandler {\n  handle(params: MissingTranslationHandlerParams): string {\n    const key = params.key;\n    return `${translationNotFoundMessage}[${key}]`;\n  }\n}\n\nexport function translatePartialLoader(http: HttpClient): TranslateLoader {\n  return new TranslateHttpLoader(http, 'i18n/', `.json?buildTimestamp=${process.env.BUILD_TIMESTAMP ?? ''}`);\n}\n\nexport function missingTranslationHandler(): MissingTranslationHandler {\n  return new MissingTranslationHandlerImpl();\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "2a0cfd60caad2bb5560863d8dd7bf459bdcf34ef"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2nn0aowicp = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2nn0aowicp();
+cov_2nn0aowicp().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2nn0aowicp().s[1]++;
+exports.missingTranslationHandler = exports.translatePartialLoader = exports.MissingTranslationHandlerImpl = exports.translationNotFoundMessage = void 0;
+const http_loader_1 =
+/* istanbul ignore next */
+(cov_2nn0aowicp().s[2]++, require("@ngx-translate/http-loader"));
+
+/* istanbul ignore next */
+cov_2nn0aowicp().s[3]++;
+exports.translationNotFoundMessage = 'translation-not-found';
+
+class MissingTranslationHandlerImpl {
+  handle(params) {
+    /* istanbul ignore next */
+    cov_2nn0aowicp().f[0]++;
+    const key =
+    /* istanbul ignore next */
+    (cov_2nn0aowicp().s[4]++, params.key);
+
+    /* istanbul ignore next */
+    cov_2nn0aowicp().s[5]++;
+    return `${exports.translationNotFoundMessage}[${key}]`;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_2nn0aowicp().s[6]++;
+exports.MissingTranslationHandlerImpl = MissingTranslationHandlerImpl;
+
+function translatePartialLoader(http) {
+  /* istanbul ignore next */
+  cov_2nn0aowicp().f[1]++;
+
+  var _a;
+
+  /* istanbul ignore next */
+  cov_2nn0aowicp().s[7]++;
+  return new http_loader_1.TranslateHttpLoader(http, 'i18n/', `.json?buildTimestamp=${
+  /* istanbul ignore next */
+  (cov_2nn0aowicp().b[1][0]++, (_a = process.env.BUILD_TIMESTAMP) !== null) &&
+  /* istanbul ignore next */
+  (cov_2nn0aowicp().b[1][1]++, _a !== void 0) ?
+  /* istanbul ignore next */
+  (cov_2nn0aowicp().b[0][0]++, _a) :
+  /* istanbul ignore next */
+  (cov_2nn0aowicp().b[0][1]++, '')}`);
+}
+
+/* istanbul ignore next */
+cov_2nn0aowicp().s[8]++;
+exports.translatePartialLoader = translatePartialLoader;
+
+function missingTranslationHandler() {
+  /* istanbul ignore next */
+  cov_2nn0aowicp().f[2]++;
+  cov_2nn0aowicp().s[9]++;
+  return new MissingTranslationHandlerImpl();
+}
+
+/* istanbul ignore next */
+cov_2nn0aowicp().s[10]++;
+exports.missingTranslationHandler = missingTranslationHandler;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9jb25maWcvdHJhbnNsYXRpb24uY29uZmlnLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBZUM7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBYkQsTUFBQSxhQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsNEJBQUEsQ0FBQSxDQUFBOzs7O0FBRWEsT0FBQSxDQUFBLDBCQUFBLEdBQTZCLHVCQUE3Qjs7QUFFYixNQUFhLDZCQUFiLENBQTBDO0FBQ3hDLEVBQUEsTUFBTSxDQUFDLE1BQUQsRUFBd0M7QUFBQTtBQUFBO0FBQzVDLFVBQU0sR0FBRztBQUFBO0FBQUEsOEJBQUcsTUFBTSxDQUFDLEdBQVYsQ0FBVDs7QUFENEM7QUFBQTtBQUU1QyxXQUFPLEdBQUcsT0FBQSxDQUFBLDBCQUEwQixJQUFJLEdBQUcsR0FBM0M7QUFDRDs7QUFKdUM7Ozs7QUFBMUMsT0FBQSxDQUFBLDZCQUFBLEdBQUEsNkJBQUE7O0FBT0EsU0FBZ0Isc0JBQWhCLENBQXVDLElBQXZDLEVBQXVEO0FBQUE7QUFBQTs7OztBQUFBO0FBQUE7QUFDckQsU0FBTyxJQUFJLGFBQUEsQ0FBQSxtQkFBSixDQUF3QixJQUF4QixFQUE4QixPQUE5QixFQUF1QztBQUF3QjtBQUFBLGdDQUFBLEVBQUEsR0FBQSxPQUFPLENBQUMsR0FBUixDQUFZLGVBQVosTUFBMkIsSUFBM0I7QUFBQTtBQUFBLCtCQUEyQixFQUFBLEtBQUEsS0FBQSxDQUEzQjtBQUFBO0FBQUEsK0JBQTJCLEVBQTNCO0FBQUE7QUFBQSwrQkFBK0IsRUFBL0IsQ0FBaUMsRUFBaEcsQ0FBUDtBQUNEOzs7O0FBRkQsT0FBQSxDQUFBLHNCQUFBLEdBQUEsc0JBQUE7O0FBSUEsU0FBZ0IseUJBQWhCLEdBQXlDO0FBQUE7QUFBQTtBQUFBO0FBQ3ZDLFNBQU8sSUFBSSw2QkFBSixFQUFQO0FBQ0Q7Ozs7QUFGRCxPQUFBLENBQUEseUJBQUEsR0FBQSx5QkFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBDbGllbnQgfSBmcm9tICdAYW5ndWxhci9jb21tb24vaHR0cCc7XG5pbXBvcnQgeyBNaXNzaW5nVHJhbnNsYXRpb25IYW5kbGVyLCBNaXNzaW5nVHJhbnNsYXRpb25IYW5kbGVyUGFyYW1zLCBUcmFuc2xhdGVMb2FkZXIgfSBmcm9tICdAbmd4LXRyYW5zbGF0ZS9jb3JlJztcbmltcG9ydCB7IFRyYW5zbGF0ZUh0dHBMb2FkZXIgfSBmcm9tICdAbmd4LXRyYW5zbGF0ZS9odHRwLWxvYWRlcic7XG5cbmV4cG9ydCBjb25zdCB0cmFuc2xhdGlvbk5vdEZvdW5kTWVzc2FnZSA9ICd0cmFuc2xhdGlvbi1ub3QtZm91bmQnO1xuXG5leHBvcnQgY2xhc3MgTWlzc2luZ1RyYW5zbGF0aW9uSGFuZGxlckltcGwgaW1wbGVtZW50cyBNaXNzaW5nVHJhbnNsYXRpb25IYW5kbGVyIHtcbiAgaGFuZGxlKHBhcmFtczogTWlzc2luZ1RyYW5zbGF0aW9uSGFuZGxlclBhcmFtcyk6IHN0cmluZyB7XG4gICAgY29uc3Qga2V5ID0gcGFyYW1zLmtleTtcbiAgICByZXR1cm4gYCR7dHJhbnNsYXRpb25Ob3RGb3VuZE1lc3NhZ2V9WyR7a2V5fV1gO1xuICB9XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB0cmFuc2xhdGVQYXJ0aWFsTG9hZGVyKGh0dHA6IEh0dHBDbGllbnQpOiBUcmFuc2xhdGVMb2FkZXIge1xuICByZXR1cm4gbmV3IFRyYW5zbGF0ZUh0dHBMb2FkZXIoaHR0cCwgJ2kxOG4vJywgYC5qc29uP2J1aWxkVGltZXN0YW1wPSR7cHJvY2Vzcy5lbnYuQlVJTERfVElNRVNUQU1QID8/ICcnfWApO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gbWlzc2luZ1RyYW5zbGF0aW9uSGFuZGxlcigpOiBNaXNzaW5nVHJhbnNsYXRpb25IYW5kbGVyIHtcbiAgcmV0dXJuIG5ldyBNaXNzaW5nVHJhbnNsYXRpb25IYW5kbGVySW1wbCgpO1xufVxuIl19

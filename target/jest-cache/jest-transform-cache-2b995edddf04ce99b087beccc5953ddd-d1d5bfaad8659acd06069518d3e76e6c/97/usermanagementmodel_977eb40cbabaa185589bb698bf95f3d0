@@ -1,0 +1,306 @@
+6110654ed743881249618afa438685bb
+"use strict";
+
+/* istanbul ignore next */
+function cov_2c0q9ruup4() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/user-management.model.ts";
+  var hash = "529a625d8c7dbcc13504ca30fdae179f47bfa4ab";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/user-management.model.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 22
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 21
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 8
+        },
+        end: {
+          line: 7,
+          column: 27
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 35
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 33
+        }
+      },
+      "6": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 27
+        }
+      },
+      "7": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 35
+        }
+      },
+      "8": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 31
+        }
+      },
+      "9": {
+        start: {
+          line: 13,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 39
+        }
+      },
+      "10": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 35
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 39
+        }
+      },
+      "12": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 45
+        }
+      },
+      "13": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 49
+        }
+      },
+      "14": {
+        start: {
+          line: 20,
+          column: 0
+        },
+        end: {
+          line: 20,
+          column: 20
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 146
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/user-management.model.ts",
+      mappings: ";;;AAeA,MAAa,IAAI;IACf,YACS,EAAW,EACX,KAAc,EACd,SAAyB,EACzB,QAAwB,EACxB,KAAc,EACd,SAAmB,EACnB,OAAgB,EAChB,WAAsB,EACtB,SAAkB,EAClB,WAAkB,EAClB,cAAuB,EACvB,gBAAuB;QAXvB,OAAE,GAAF,EAAE,CAAS;QACX,UAAK,GAAL,KAAK,CAAS;QACd,cAAS,GAAT,SAAS,CAAgB;QACzB,aAAQ,GAAR,QAAQ,CAAgB;QACxB,UAAK,GAAL,KAAK,CAAS;QACd,cAAS,GAAT,SAAS,CAAU;QACnB,YAAO,GAAP,OAAO,CAAS;QAChB,gBAAW,GAAX,WAAW,CAAW;QACtB,cAAS,GAAT,SAAS,CAAS;QAClB,gBAAW,GAAX,WAAW,CAAO;QAClB,mBAAc,GAAd,cAAc,CAAS;QACvB,qBAAgB,GAAhB,gBAAgB,CAAO;IAC7B,CAAC;CACL;AAfD,oBAeC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/user-management.model.ts"],
+      sourcesContent: ["export interface IUser {\n  id?: number;\n  login?: string;\n  firstName?: string | null;\n  lastName?: string | null;\n  email?: string;\n  activated?: boolean;\n  langKey?: string;\n  authorities?: string[];\n  createdBy?: string;\n  createdDate?: Date;\n  lastModifiedBy?: string;\n  lastModifiedDate?: Date;\n}\n\nexport class User implements IUser {\n  constructor(\n    public id?: number,\n    public login?: string,\n    public firstName?: string | null,\n    public lastName?: string | null,\n    public email?: string,\n    public activated?: boolean,\n    public langKey?: string,\n    public authorities?: string[],\n    public createdBy?: string,\n    public createdDate?: Date,\n    public lastModifiedBy?: string,\n    public lastModifiedDate?: Date\n  ) {}\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "529a625d8c7dbcc13504ca30fdae179f47bfa4ab"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2c0q9ruup4 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2c0q9ruup4();
+cov_2c0q9ruup4().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2c0q9ruup4().s[1]++;
+exports.User = void 0;
+
+class User {
+  constructor(id, login, firstName, lastName, email, activated, langKey, authorities, createdBy, createdDate, lastModifiedBy, lastModifiedDate) {
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().f[0]++;
+    cov_2c0q9ruup4().s[2]++;
+    this.id = id;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[3]++;
+    this.login = login;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[4]++;
+    this.firstName = firstName;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[5]++;
+    this.lastName = lastName;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[6]++;
+    this.email = email;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[7]++;
+    this.activated = activated;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[8]++;
+    this.langKey = langKey;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[9]++;
+    this.authorities = authorities;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[10]++;
+    this.createdBy = createdBy;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[11]++;
+    this.createdDate = createdDate;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[12]++;
+    this.lastModifiedBy = lastModifiedBy;
+
+    /* istanbul ignore next */
+    cov_2c0q9ruup4().s[13]++;
+    this.lastModifiedDate = lastModifiedDate;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_2c0q9ruup4().s[14]++;
+exports.User = User;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9hZG1pbi91c2VyLW1hbmFnZW1lbnQvdXNlci1tYW5hZ2VtZW50Lm1vZGVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUEyQlc7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVpYLE1BQWEsSUFBYixDQUFpQjtBQUNmLEVBQUEsV0FBQSxDQUNTLEVBRFQsRUFFUyxLQUZULEVBR1MsU0FIVCxFQUlTLFFBSlQsRUFLUyxLQUxULEVBTVMsU0FOVCxFQU9TLE9BUFQsRUFRUyxXQVJULEVBU1MsU0FUVCxFQVVTLFdBVlQsRUFXUyxjQVhULEVBWVMsZ0JBWlQsRUFZZ0M7QUFBQTtBQUFBO0FBQUE7QUFYdkIsU0FBQSxFQUFBLEdBQUEsRUFBQTs7QUFXdUI7QUFBQTtBQVZ2QixTQUFBLEtBQUEsR0FBQSxLQUFBOztBQVV1QjtBQUFBO0FBVHZCLFNBQUEsU0FBQSxHQUFBLFNBQUE7O0FBU3VCO0FBQUE7QUFSdkIsU0FBQSxRQUFBLEdBQUEsUUFBQTs7QUFRdUI7QUFBQTtBQVB2QixTQUFBLEtBQUEsR0FBQSxLQUFBOztBQU91QjtBQUFBO0FBTnZCLFNBQUEsU0FBQSxHQUFBLFNBQUE7O0FBTXVCO0FBQUE7QUFMdkIsU0FBQSxPQUFBLEdBQUEsT0FBQTs7QUFLdUI7QUFBQTtBQUp2QixTQUFBLFdBQUEsR0FBQSxXQUFBOztBQUl1QjtBQUFBO0FBSHZCLFNBQUEsU0FBQSxHQUFBLFNBQUE7O0FBR3VCO0FBQUE7QUFGdkIsU0FBQSxXQUFBLEdBQUEsV0FBQTs7QUFFdUI7QUFBQTtBQUR2QixTQUFBLGNBQUEsR0FBQSxjQUFBOztBQUN1QjtBQUFBO0FBQXZCLFNBQUEsZ0JBQUEsR0FBQSxnQkFBQTtBQUNMOztBQWRXOzs7O0FBQWpCLE9BQUEsQ0FBQSxJQUFBLEdBQUEsSUFBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgSVVzZXIge1xuICBpZD86IG51bWJlcjtcbiAgbG9naW4/OiBzdHJpbmc7XG4gIGZpcnN0TmFtZT86IHN0cmluZyB8IG51bGw7XG4gIGxhc3ROYW1lPzogc3RyaW5nIHwgbnVsbDtcbiAgZW1haWw/OiBzdHJpbmc7XG4gIGFjdGl2YXRlZD86IGJvb2xlYW47XG4gIGxhbmdLZXk/OiBzdHJpbmc7XG4gIGF1dGhvcml0aWVzPzogc3RyaW5nW107XG4gIGNyZWF0ZWRCeT86IHN0cmluZztcbiAgY3JlYXRlZERhdGU/OiBEYXRlO1xuICBsYXN0TW9kaWZpZWRCeT86IHN0cmluZztcbiAgbGFzdE1vZGlmaWVkRGF0ZT86IERhdGU7XG59XG5cbmV4cG9ydCBjbGFzcyBVc2VyIGltcGxlbWVudHMgSVVzZXIge1xuICBjb25zdHJ1Y3RvcihcbiAgICBwdWJsaWMgaWQ/OiBudW1iZXIsXG4gICAgcHVibGljIGxvZ2luPzogc3RyaW5nLFxuICAgIHB1YmxpYyBmaXJzdE5hbWU/OiBzdHJpbmcgfCBudWxsLFxuICAgIHB1YmxpYyBsYXN0TmFtZT86IHN0cmluZyB8IG51bGwsXG4gICAgcHVibGljIGVtYWlsPzogc3RyaW5nLFxuICAgIHB1YmxpYyBhY3RpdmF0ZWQ/OiBib29sZWFuLFxuICAgIHB1YmxpYyBsYW5nS2V5Pzogc3RyaW5nLFxuICAgIHB1YmxpYyBhdXRob3JpdGllcz86IHN0cmluZ1tdLFxuICAgIHB1YmxpYyBjcmVhdGVkQnk/OiBzdHJpbmcsXG4gICAgcHVibGljIGNyZWF0ZWREYXRlPzogRGF0ZSxcbiAgICBwdWJsaWMgbGFzdE1vZGlmaWVkQnk/OiBzdHJpbmcsXG4gICAgcHVibGljIGxhc3RNb2RpZmllZERhdGU/OiBEYXRlXG4gICkge31cbn1cbiJdfQ==

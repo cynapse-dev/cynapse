@@ -1,0 +1,186 @@
+6e121998923c1c809873b03baf0e9b73
+"use strict";
+
+/* istanbul ignore next */
+function cov_2563rae2h3() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/layouts/profiles/profile-info.model.ts";
+  var hash = "603d45cb4f653cd9d7e248e591ec7cc93ea7f3aa";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/layouts/profiles/profile-info.model.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 29
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 45
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 8
+        },
+        end: {
+          line: 7,
+          column: 35
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 45
+        }
+      },
+      "6": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 12,
+          column: 34
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 73
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/layouts/profiles/profile-info.model.ts",
+      mappings: ";;;AAOA,MAAa,WAAW;IACtB,YACS,cAAyB,EACzB,SAAkB,EAClB,YAAsB,EACtB,cAAwB;QAHxB,mBAAc,GAAd,cAAc,CAAW;QACzB,cAAS,GAAT,SAAS,CAAS;QAClB,iBAAY,GAAZ,YAAY,CAAU;QACtB,mBAAc,GAAd,cAAc,CAAU;IAC9B,CAAC;CACL;AAPD,kCAOC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/layouts/profiles/profile-info.model.ts"],
+      sourcesContent: ["export interface InfoResponse {\n  'display-ribbon-on-profiles'?: string;\n  git?: any;\n  build?: any;\n  activeProfiles?: string[];\n}\n\nexport class ProfileInfo {\n  constructor(\n    public activeProfiles?: string[],\n    public ribbonEnv?: string,\n    public inProduction?: boolean,\n    public openAPIEnabled?: boolean\n  ) {}\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "603d45cb4f653cd9d7e248e591ec7cc93ea7f3aa"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2563rae2h3 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2563rae2h3();
+cov_2563rae2h3().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2563rae2h3().s[1]++;
+exports.ProfileInfo = void 0;
+
+class ProfileInfo {
+  constructor(activeProfiles, ribbonEnv, inProduction, openAPIEnabled) {
+    /* istanbul ignore next */
+    cov_2563rae2h3().f[0]++;
+    cov_2563rae2h3().s[2]++;
+    this.activeProfiles = activeProfiles;
+
+    /* istanbul ignore next */
+    cov_2563rae2h3().s[3]++;
+    this.ribbonEnv = ribbonEnv;
+
+    /* istanbul ignore next */
+    cov_2563rae2h3().s[4]++;
+    this.inProduction = inProduction;
+
+    /* istanbul ignore next */
+    cov_2563rae2h3().s[5]++;
+    this.openAPIEnabled = openAPIEnabled;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_2563rae2h3().s[6]++;
+exports.ProfileInfo = ProfileInfo;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9sYXlvdXRzL3Byb2ZpbGVzL3Byb2ZpbGUtaW5mby5tb2RlbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFPQSxNQUFhLFdBQWIsQ0FBd0I7QUFDdEIsRUFBQSxXQUFBLENBQ1MsY0FEVCxFQUVTLFNBRlQsRUFHUyxZQUhULEVBSVMsY0FKVCxFQUlpQztBQUFBO0FBQUE7QUFBQTtBQUh4QixTQUFBLGNBQUEsR0FBQSxjQUFBOztBQUd3QjtBQUFBO0FBRnhCLFNBQUEsU0FBQSxHQUFBLFNBQUE7O0FBRXdCO0FBQUE7QUFEeEIsU0FBQSxZQUFBLEdBQUEsWUFBQTs7QUFDd0I7QUFBQTtBQUF4QixTQUFBLGNBQUEsR0FBQSxjQUFBO0FBQ0w7O0FBTmtCOzs7O0FBQXhCLE9BQUEsQ0FBQSxXQUFBLEdBQUEsV0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgSW5mb1Jlc3BvbnNlIHtcbiAgJ2Rpc3BsYXktcmliYm9uLW9uLXByb2ZpbGVzJz86IHN0cmluZztcbiAgZ2l0PzogYW55O1xuICBidWlsZD86IGFueTtcbiAgYWN0aXZlUHJvZmlsZXM/OiBzdHJpbmdbXTtcbn1cblxuZXhwb3J0IGNsYXNzIFByb2ZpbGVJbmZvIHtcbiAgY29uc3RydWN0b3IoXG4gICAgcHVibGljIGFjdGl2ZVByb2ZpbGVzPzogc3RyaW5nW10sXG4gICAgcHVibGljIHJpYmJvbkVudj86IHN0cmluZyxcbiAgICBwdWJsaWMgaW5Qcm9kdWN0aW9uPzogYm9vbGVhbixcbiAgICBwdWJsaWMgb3BlbkFQSUVuYWJsZWQ/OiBib29sZWFuXG4gICkge31cbn1cbiJdfQ==

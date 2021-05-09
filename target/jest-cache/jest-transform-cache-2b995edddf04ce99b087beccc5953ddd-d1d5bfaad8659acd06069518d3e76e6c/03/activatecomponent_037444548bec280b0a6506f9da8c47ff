@@ -1,0 +1,51 @@
+687994cd1d81da28e7bc24757f51bbbe
+/* istanbul ignore next */
+function cov_1bnqa0b8we() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/account/activate/activate.component.html";
+  var hash = "96ba95a4101d342996aa88c251eb48a8924dd7fe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/account/activate/activate.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 739
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "96ba95a4101d342996aa88c251eb48a8924dd7fe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1bnqa0b8we = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1bnqa0b8we();
+cov_1bnqa0b8we().s[0]++;
+module.exports = "<div>\n  <div class=\"row justify-content-center\">\n    <div class=\"col-md-8\">\n      <h1 jhiTranslate=\"activate.title\">Activation</h1>\n\n      <div class=\"alert alert-success\" *ngIf=\"success\">\n        <span jhiTranslate=\"activate.messages.success\"><strong>Your user account has been activated.</strong> Please </span>\n        <a class=\"alert-link\" routerLink=\"/login\" jhiTranslate=\"global.messages.info.authenticated.link\">sign in</a>.\n      </div>\n\n      <div class=\"alert alert-danger\" *ngIf=\"error\" jhiTranslate=\"activate.messages.error\">\n        <strong>Your user could not be activated.</strong> Please use the registration form to sign up.\n      </div>\n    </div>\n  </div>\n</div>\n";

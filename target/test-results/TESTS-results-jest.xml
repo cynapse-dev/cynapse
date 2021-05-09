@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="181" failures="0" errors="0" time="27.385">
+  <testsuite name="Alert service test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:41" time="6.494" tests="15">
+    <testcase classname="Alert service test Alert Service Test should produce a proper alert object and fetch it" name="Alert service test Alert Service Test should produce a proper alert object and fetch it" time="0.053">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a proper alert object and add it to external alert objects array" name="Alert service test Alert Service Test should produce a proper alert object and add it to external alert objects array" time="0.012">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce an alert object with correct id" name="Alert service test Alert Service Test should produce an alert object with correct id" time="0.017">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should close an alert correctly" name="Alert service test Alert Service Test should close an alert correctly" time="0.023">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should close an alert on timeout correctly" name="Alert service test Alert Service Test should close an alert on timeout correctly" time="0.018">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should clear alerts" name="Alert service test Alert Service Test should clear alerts" time="0.026">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a scoped alert" name="Alert service test Alert Service Test should produce a scoped alert" time="0.015">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a success message" name="Alert service test Alert Service Test should produce a success message" time="0.014">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a success message with custom position" name="Alert service test Alert Service Test should produce a success message with custom position" time="0.02">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a error message" name="Alert service test Alert Service Test should produce a error message" time="0.015">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a warning message" name="Alert service test Alert Service Test should produce a warning message" time="0.013">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a info message" name="Alert service test Alert Service Test should produce a info message" time="0.015">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a info message with translated message if key exists" name="Alert service test Alert Service Test should produce a info message with translated message if key exists" time="0.011">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a info message with provided message if key does not exists" name="Alert service test Alert Service Test should produce a info message with provided message if key does not exists" time="0.008">
+    </testcase>
+    <testcase classname="Alert service test Alert Service Test should produce a info message with provided key if transltion key does not exist in translations and message is not provided" name="Alert service test Alert Service Test should produce a info message with provided key if transltion key does not exist in translations and message is not provided" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:41" time="6.732" tests="12">
+    <testcase classname="Service Tests Forms Service Service methods should find an element" name="Service Tests Forms Service Service methods should find an element" time="0.058">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods should create a Forms" name="Service Tests Forms Service Service methods should create a Forms" time="0.083">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods should update a Forms" name="Service Tests Forms Service Service methods should update a Forms" time="0.023">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods should partial update a Forms" name="Service Tests Forms Service Service methods should partial update a Forms" time="0.017">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods should return a list of Forms" name="Service Tests Forms Service Service methods should return a list of Forms" time="0.008">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods should delete a Forms" name="Service Tests Forms Service Service methods should delete a Forms" time="0.012">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add a Forms to an empty array" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add a Forms to an empty array" time="0.008">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should not add a Forms to an array that contains it" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should not add a Forms to an array that contains it" time="0.006">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add a Forms to an array that doesn&apos;t contain it" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add a Forms to an array that doesn&apos;t contain it" time="0.01">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add only unique Forms to an array" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should add only unique Forms to an array" time="0.019">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should accept varargs" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should accept varargs" time="0.008">
+    </testcase>
+    <testcase classname="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should accept null and undefined values" name="Service Tests Forms Service Service methods addFormsToCollectionIfMissing should accept null and undefined values" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:48" time="1.489" tests="12">
+    <testcase classname="Service Tests Account Service authenticate authenticationState should emit null if input is null" name="Service Tests Account Service authenticate authenticationState should emit null if input is null" time="0.017">
+    </testcase>
+    <testcase classname="Service Tests Account Service authenticate authenticationState should emit the same account as was in input parameter" name="Service Tests Account Service authenticate authenticationState should emit the same account as was in input parameter" time="0.012">
+    </testcase>
+    <testcase classname="Service Tests Account Service identity should call /account only once if not logged out after first authentication and should call /account again if user has logged out" name="Service Tests Account Service identity should call /account only once if not logged out after first authentication and should call /account again if user has logged out" time="0.011">
+    </testcase>
+    <testcase classname="Service Tests Account Service identity navigateToStoredUrl should navigate to the previous stored url post successful authentication" name="Service Tests Account Service identity navigateToStoredUrl should navigate to the previous stored url post successful authentication" time="0.019">
+    </testcase>
+    <testcase classname="Service Tests Account Service identity navigateToStoredUrl should not navigate to the previous stored url when authentication fails" name="Service Tests Account Service identity navigateToStoredUrl should not navigate to the previous stored url when authentication fails" time="0.013">
+    </testcase>
+    <testcase classname="Service Tests Account Service identity navigateToStoredUrl should not navigate to the previous stored url when no such url exists post successful authentication" name="Service Tests Account Service identity navigateToStoredUrl should not navigate to the previous stored url when no such url exists post successful authentication" time="0.012">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return false if user is not logged" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return false if user is not logged" time="0.01">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return false if user is logged and has not authority" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return false if user is logged and has not authority" time="0.017">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return true if user is logged and has authority" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority string parameter should return true if user is logged and has authority" time="0.011">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return false if user is not logged" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return false if user is not logged" time="0.013">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return false if user is logged and has not authority" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return false if user is logged and has not authority" time="0.009">
+    </testcase>
+    <testcase classname="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return true if user is logged and has authority" name="Service Tests Account Service hasAnyAuthority hasAnyAuthority array parameter should return true if user is logged and has authority" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:48" time="1.742" tests="8">
+    <testcase classname="Component Tests MainComponent page title navigation end should set page title to default title if pageTitle is missing on routes" name="Component Tests MainComponent page title navigation end should set page title to default title if pageTitle is missing on routes" time="0.046">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title navigation end should set page title to root route pageTitle if there is no child routes" name="Component Tests MainComponent page title navigation end should set page title to root route pageTitle if there is no child routes" time="0.023">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title navigation end should set page title to child route pageTitle if child routes exist and pageTitle is set for child route" name="Component Tests MainComponent page title navigation end should set page title to child route pageTitle if child routes exist and pageTitle is set for child route" time="0.015">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title navigation end should set page title to parent route pageTitle if child routes exists but pageTitle is not set for child route data" name="Component Tests MainComponent page title navigation end should set page title to parent route pageTitle if child routes exists but pageTitle is not set for child route data" time="0.018">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title language change should set page title to default title if pageTitle is missing on routes" name="Component Tests MainComponent page title language change should set page title to default title if pageTitle is missing on routes" time="0.015">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title language change should set page title to root route pageTitle if there is no child routes" name="Component Tests MainComponent page title language change should set page title to root route pageTitle if there is no child routes" time="0.018">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title language change should set page title to child route pageTitle if child routes exist and pageTitle is set for child route" name="Component Tests MainComponent page title language change should set page title to child route pageTitle if child routes exist and pageTitle is set for child route" time="0.018">
+    </testcase>
+    <testcase classname="Component Tests MainComponent page title language change should set page title to parent route pageTitle if child routes exists but pageTitle is not set for child route data" name="Component Tests MainComponent page title language change should set page title to parent route pageTitle if child routes exists but pageTitle is not set for child route data" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:49" time="1.114" tests="8">
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 0" name="Component Tests Alert Error Component Error Handling Should display an alert on status 0" time="0.062">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 404" name="Component Tests Alert Error Component Error Handling Should display an alert on status 404" time="0.018">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on generic error" name="Component Tests Alert Error Component Error Handling Should display an alert on generic error" time="0.021">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for generic error" name="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for generic error" time="0.021">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for generic error without message" name="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for generic error without message" time="0.019">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for invalid parameters" name="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for invalid parameters" time="0.011">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for error headers" name="Component Tests Alert Error Component Error Handling Should display an alert on status 400 for error headers" time="0.017">
+    </testcase>
+    <testcase classname="Component Tests Alert Error Component Error Handling Should display an alert on status 500 with detail" name="Component Tests Alert Error Component Error Handling Should display an alert on status 500 with detail" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:49" time="1.539" tests="6">
+    <testcase classname="Component Tests Forms Management Update Component ngOnInit Should call User query and add missing value" name="Component Tests Forms Management Update Component ngOnInit Should call User query and add missing value" time="0.04">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Update Component ngOnInit Should update editForm" name="Component Tests Forms Management Update Component ngOnInit Should update editForm" time="0.03">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Update Component save Should call update service on save for existing entity" name="Component Tests Forms Management Update Component save Should call update service on save for existing entity" time="0.032">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Update Component save Should call create service on save for new entity" name="Component Tests Forms Management Update Component save Should call create service on save for new entity" time="0.034">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Update Component save Should set isSaving to false on error" name="Component Tests Forms Management Update Component save Should set isSaving to false on error" time="0.043">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Update Component Tracking relationships identifiers trackUserById Should return tracked User primary key" name="Component Tests Forms Management Update Component Tracking relationships identifiers trackUserById Should return tracked User primary key" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="Directive: SortByDirective" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:50" time="1.178" tests="6">
+    <testcase classname="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is _score" name="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is _score" time="0.116">
+    </testcase>
+    <testcase classname="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate differs from column predicate" name="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate differs from column predicate" time="0.039">
+    </testcase>
+    <testcase classname="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is same as column predicate" name="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is same as column predicate" time="0.037">
+    </testcase>
+    <testcase classname="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is _score and user clicks on column header" name="Directive: SortByDirective should initialize predicate, order, icon when initial component predicate is _score and user clicks on column header" time="0.027">
+    </testcase>
+    <testcase classname="Directive: SortByDirective should update component predicate, order, icon when user clicks on column header" name="Directive: SortByDirective should update component predicate, order, icon when user clicks on column header" time="0.025">
+    </testcase>
+    <testcase classname="Directive: SortByDirective should update component predicate, order, icon when user double clicks on column header" name="Directive: SortByDirective should update component predicate, order, icon when user double clicks on column header" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:51" time="0.781" tests="5">
+    <testcase classname="Component Tests RegisterComponent should ensure the two passwords entered match" name="Component Tests RegisterComponent should ensure the two passwords entered match" time="0.023">
+    </testcase>
+    <testcase classname="Component Tests RegisterComponent should update success to true after creating an account" name="Component Tests RegisterComponent should update success to true after creating an account" time="0.017">
+    </testcase>
+    <testcase classname="Component Tests RegisterComponent should notify of user existence upon 400/login already in use" name="Component Tests RegisterComponent should notify of user existence upon 400/login already in use" time="0.017">
+    </testcase>
+    <testcase classname="Component Tests RegisterComponent should notify of email existence upon 400/email address already in use" name="Component Tests RegisterComponent should notify of email existence upon 400/email address already in use" time="0.026">
+    </testcase>
+    <testcase classname="Component Tests RegisterComponent should notify of generic error" name="Component Tests RegisterComponent should notify of generic error" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:52" time="0.387" tests="8">
+    <testcase classname="Service Tests User Service Service methods should return Users" name="Service Tests User Service Service methods should return Users" time="0.014">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods should propagate not found response" name="Service Tests User Service Service methods should propagate not found response" time="0.01">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should add a User to an empty array" name="Service Tests User Service Service methods addUserToCollectionIfMissing should add a User to an empty array" time="0.009">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should not add a User to an array that contains it" name="Service Tests User Service Service methods addUserToCollectionIfMissing should not add a User to an array that contains it" time="0.014">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should add a User to an array that doesn&apos;t contain it" name="Service Tests User Service Service methods addUserToCollectionIfMissing should add a User to an array that doesn&apos;t contain it" time="0.008">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should add only unique User to an array" name="Service Tests User Service Service methods addUserToCollectionIfMissing should add only unique User to an array" time="0.011">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should accept varargs" name="Service Tests User Service Service methods addUserToCollectionIfMissing should accept varargs" time="0.01">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods addUserToCollectionIfMissing should accept null and undefined values" name="Service Tests User Service Service methods addUserToCollectionIfMissing should accept null and undefined values" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="HasAnyAuthorityDirective tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:52" time="0.574" tests="4">
+    <testcase classname="HasAnyAuthorityDirective tests set jhiHasAnyAuthority should show restricted content to user if user has required role" name="HasAnyAuthorityDirective tests set jhiHasAnyAuthority should show restricted content to user if user has required role" time="0.034">
+    </testcase>
+    <testcase classname="HasAnyAuthorityDirective tests set jhiHasAnyAuthority should not show restricted content to user if user has not required role" name="HasAnyAuthorityDirective tests set jhiHasAnyAuthority should not show restricted content to user if user has not required role" time="0.015">
+    </testcase>
+    <testcase classname="HasAnyAuthorityDirective tests change authorities should show or not show restricted content correctly if user authorities are changing" name="HasAnyAuthorityDirective tests change authorities should show or not show restricted content correctly if user authorities are changing" time="0.019">
+    </testcase>
+    <testcase classname="HasAnyAuthorityDirective tests ngOnDestroy should destroy authentication state subscription on component destroy" name="HasAnyAuthorityDirective tests ngOnDestroy should destroy authentication state subscription on component destroy" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:52" time="0.83" tests="3">
+    <testcase classname="Component Tests User Management Update Component OnInit Should load authorities and language on init" name="Component Tests User Management Update Component OnInit Should load authorities and language on init" time="0.03">
+    </testcase>
+    <testcase classname="Component Tests User Management Update Component save Should call update service on save for existing user" name="Component Tests User Management Update Component save Should call update service on save for existing user" time="0.026">
+    </testcase>
+    <testcase classname="Component Tests User Management Update Component save Should call create service on save for new user" name="Component Tests User Management Update Component save Should call create service on save for new user" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:52" time="1.06" tests="2">
+    <testcase classname="Component Tests User Management Component OnInit Should call load all on init" name="Component Tests User Management Component OnInit Should call load all on init" time="0.034">
+    </testcase>
+    <testcase classname="Component Tests User Management Component setActive Should update user and call load all" name="Component Tests User Management Component setActive Should update user and call load all" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth JWT" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:53" time="0.602" tests="6">
+    <testcase classname="Auth JWT Get Token should return empty token if not found in local storage nor session storage" name="Auth JWT Get Token should return empty token if not found in local storage nor session storage" time="0.024">
+    </testcase>
+    <testcase classname="Auth JWT Get Token should return token from session storage if local storage is empty" name="Auth JWT Get Token should return token from session storage if local storage is empty" time="0.01">
+    </testcase>
+    <testcase classname="Auth JWT Get Token should return token from localstorage storage" name="Auth JWT Get Token should return token from localstorage storage" time="0.014">
+    </testcase>
+    <testcase classname="Auth JWT Login should clear session storage and save in local storage when rememberMe is true" name="Auth JWT Login should clear session storage and save in local storage when rememberMe is true" time="0.041">
+    </testcase>
+    <testcase classname="Auth JWT Login should clear local storage and save in session storage when rememberMe is false" name="Auth JWT Login should clear local storage and save in session storage when rememberMe is false" time="0.013">
+    </testcase>
+    <testcase classname="Auth JWT Logout should clear storage" name="Auth JWT Logout should clear storage" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:53" time="0.768" tests="4">
+    <testcase classname="Component Tests LoginComponent Should call accountService.identity on Init" name="Component Tests LoginComponent Should call accountService.identity on Init" time="0.029">
+    </testcase>
+    <testcase classname="Component Tests LoginComponent Should call accountService.isAuthenticated on Init" name="Component Tests LoginComponent Should call accountService.isAuthenticated on Init" time="0.016">
+    </testcase>
+    <testcase classname="Component Tests LoginComponent should navigate to home page on Init if authenticated=true" name="Component Tests LoginComponent should navigate to home page on Init if authenticated=true" time="0.02">
+    </testcase>
+    <testcase classname="Component Tests LoginComponent should authenticate the user and navigate to home page" name="Component Tests LoginComponent should authenticate the user and navigate to home page" time="0.017">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:54" time="0.652" tests="4">
+    <testcase classname="Component Tests PasswordComponent should show error if passwords do not match" name="Component Tests PasswordComponent should show error if passwords do not match" time="0.023">
+    </testcase>
+    <testcase classname="Component Tests PasswordComponent should call Auth.changePassword when passwords match" name="Component Tests PasswordComponent should call Auth.changePassword when passwords match" time="0.019">
+    </testcase>
+    <testcase classname="Component Tests PasswordComponent should set success to true upon success" name="Component Tests PasswordComponent should set success to true upon success" time="0.022">
+    </testcase>
+    <testcase classname="Component Tests PasswordComponent should notify of error if change password fails" name="Component Tests PasswordComponent should notify of error if change password fails" time="0.023">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:54" time="0.61" tests="5">
+    <testcase classname="Component Tests PasswordResetFinishComponent should define its initial state" name="Component Tests PasswordResetFinishComponent should define its initial state" time="0.022">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetFinishComponent sets focus after the view has been initialized" name="Component Tests PasswordResetFinishComponent sets focus after the view has been initialized" time="0.028">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetFinishComponent should ensure the two passwords entered match" name="Component Tests PasswordResetFinishComponent should ensure the two passwords entered match" time="0.022">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetFinishComponent should update success to true after resetting password" name="Component Tests PasswordResetFinishComponent should update success to true after resetting password" time="0.02">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetFinishComponent should notify of generic error" name="Component Tests PasswordResetFinishComponent should notify of generic error" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:54" time="0.575" tests="3">
+    <testcase classname="Service Tests Forms routing resolve service resolve should return IForms returned by find" name="Service Tests Forms routing resolve service resolve should return IForms returned by find" time="0.024">
+    </testcase>
+    <testcase classname="Service Tests Forms routing resolve service resolve should return new IForms if id is not provided" name="Service Tests Forms routing resolve service resolve should return new IForms if id is not provided" time="0.02">
+    </testcase>
+    <testcase classname="Service Tests Forms routing resolve service resolve should route to 404 page if data not found in server" name="Service Tests Forms routing resolve service resolve should route to 404 page if data not found in server" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:54" time="0.673" tests="3">
+    <testcase classname="Component Tests SettingsComponent should send the current identity upon save" name="Component Tests SettingsComponent should send the current identity upon save" time="0.026">
+    </testcase>
+    <testcase classname="Component Tests SettingsComponent should notify of success upon successful save" name="Component Tests SettingsComponent should notify of success upon successful save" time="0.019">
+    </testcase>
+    <testcase classname="Component Tests SettingsComponent should notify of error upon failed save" name="Component Tests SettingsComponent should notify of error upon failed save" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="Event Manager test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:55" time="0.308" tests="4">
+    <testcase classname="Event Manager test Event Manager Test should not fail when nosubscriber and broadcasting" name="Event Manager test Event Manager Test should not fail when nosubscriber and broadcasting" time="0.019">
+    </testcase>
+    <testcase classname="Event Manager test Event Manager Test should create an observable and callback when broadcasted EventWithContent" name="Event Manager test Event Manager Test should create an observable and callback when broadcasted EventWithContent" time="0.01">
+    </testcase>
+    <testcase classname="Event Manager test Event Manager Test should create an observable and callback when broadcasted string" name="Event Manager test Event Manager Test should create an observable and callback when broadcasted string" time="0.009">
+    </testcase>
+    <testcase classname="Event Manager test Event Manager Test should subscribe to multiple events" name="Event Manager test Event Manager Test should subscribe to multiple events" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="Directive: SortDirective" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:55" time="0.434" tests="3">
+    <testcase classname="Directive: SortDirective should update predicate, order and invoke callback function" name="Directive: SortDirective should update predicate, order and invoke callback function" time="0.042">
+    </testcase>
+    <testcase classname="Directive: SortDirective should change sort order to descending when same field is sorted again" name="Directive: SortDirective should change sort order to descending when same field is sorted again" time="0.016">
+    </testcase>
+    <testcase classname="Directive: SortDirective should change sort order to ascending when different field is sorted" name="Directive: SortDirective should change sort order to ascending when different field is sorted" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:55" time="0.79" tests="3">
+    <testcase classname="Component Tests LogsComponent OnInit should set all default values correctly" name="Component Tests LogsComponent OnInit should set all default values correctly" time="0.033">
+    </testcase>
+    <testcase classname="Component Tests LogsComponent OnInit Should call load all on init" name="Component Tests LogsComponent OnInit Should call load all on init" time="0.024">
+    </testcase>
+    <testcase classname="Component Tests LogsComponent change log level should change log level correctly" name="Component Tests LogsComponent change log level should change log level correctly" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:56" time="0.626" tests="2">
+    <testcase classname="Service Tests Logs Service Service methods should return Metrics" name="Service Tests Logs Service Service methods should return Metrics" time="0.018">
+    </testcase>
+    <testcase classname="Service Tests Logs Service Service methods should return Thread Dump" name="Service Tests Logs Service Service methods should return Thread Dump" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:56" time="0.833" tests="3">
+    <testcase classname="Component Tests HealthComponent getBadgeClass should get badge class" name="Component Tests HealthComponent getBadgeClass should get badge class" time="0.028">
+    </testcase>
+    <testcase classname="Component Tests HealthComponent refresh should call refresh on init" name="Component Tests HealthComponent refresh should call refresh on init" time="0.015">
+    </testcase>
+    <testcase classname="Component Tests HealthComponent refresh should handle a 503 on refreshing health data" name="Component Tests HealthComponent refresh should handle a 503 on refreshing health data" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:56" time="0.811" tests="2">
+    <testcase classname="Component Tests Navbar Component Should call profileService.getProfileInfo on init" name="Component Tests Navbar Component Should call profileService.getProfileInfo on init" time="0.029">
+    </testcase>
+    <testcase classname="Component Tests Navbar Component Should call accountService.isAuthenticated on authentication" name="Component Tests Navbar Component Should call accountService.isAuthenticated on authentication" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:57" time="0.577" tests="1">
+    <testcase classname="Component Tests ConfigurationComponent OnInit Should call load all on init" name="Component Tests ConfigurationComponent OnInit Should call load all on init" time="0.053">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:57" time="0.609" tests="3">
+    <testcase classname="Component Tests PasswordResetInitComponent sets focus after the view has been initialized" name="Component Tests PasswordResetInitComponent sets focus after the view has been initialized" time="0.029">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetInitComponent notifies of success upon successful requestReset" name="Component Tests PasswordResetInitComponent notifies of success upon successful requestReset" time="0.015">
+    </testcase>
+    <testcase classname="Component Tests PasswordResetInitComponent no notification of success upon error response" name="Component Tests PasswordResetInitComponent no notification of success upon error response" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:58" time="0.379" tests="2">
+    <testcase classname="Service Tests Logs Service Service methods should get the config" name="Service Tests Logs Service Service methods should get the config" time="0.02">
+    </testcase>
+    <testcase classname="Service Tests Logs Service Service methods should get the env" name="Service Tests Logs Service Service methods should get the env" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:58" time="0.403" tests="3">
+    <testcase classname="Service Tests User Service Service methods should return User" name="Service Tests User Service Service methods should return User" time="0.017">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods should return Authorities" name="Service Tests User Service Service methods should return Authorities" time="0.01">
+    </testcase>
+    <testcase classname="Service Tests User Service Service methods should propagate not found response" name="Service Tests User Service Service methods should propagate not found response" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:58" time="0.573" tests="3">
+    <testcase classname="Component Tests ActivateComponent calls activate.get with the key from params" name="Component Tests ActivateComponent calls activate.get with the key from params" time="0.031">
+    </testcase>
+    <testcase classname="Component Tests ActivateComponent should set set success to true upon successful activation" name="Component Tests ActivateComponent should set set success to true upon successful activation" time="0.021">
+    </testcase>
+    <testcase classname="Component Tests ActivateComponent should set set error to true upon activation failure" name="Component Tests ActivateComponent should set set error to true upon activation failure" time="0.017">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:58" time="0.546" tests="3">
+    <testcase classname="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should initialize with default values" name="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should initialize with default values" time="0.026">
+    </testcase>
+    <testcase classname="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should increase strength upon password value change" name="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should increase strength upon password value change" time="0.014">
+    </testcase>
+    <testcase classname="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should change the color based on strength" name="Component Tests PasswordStrengthBarComponent PasswordStrengthBarComponents should change the color based on strength" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:59" time="0.583" tests="3">
+    <testcase classname="Component Tests Forms Management Detail Component OnInit Should load forms on init" name="Component Tests Forms Management Detail Component OnInit Should load forms on init" time="0.027">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Detail Component byteSize Should call byteSize from DataUtils" name="Component Tests Forms Management Detail Component byteSize Should call byteSize from DataUtils" time="0.019">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Detail Component openFile Should call openFile from DataUtils" name="Component Tests Forms Management Detail Component openFile Should call openFile from DataUtils" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:59" time="0.722" tests="2">
+    <testcase classname="Component Tests Forms Management Delete Component confirmDelete Should call delete service on confirmDelete" name="Component Tests Forms Management Delete Component confirmDelete Should call delete service on confirmDelete" time="0.036">
+    </testcase>
+    <testcase classname="Component Tests Forms Management Delete Component confirmDelete Should not call delete service on clear" name="Component Tests Forms Management Delete Component confirmDelete Should not call delete service on clear" time="0.059">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:59" time="0.573" tests="1">
+    <testcase classname="Component Tests User Management Delete Component confirmDelete Should call delete service on confirmDelete" name="Component Tests User Management Delete Component confirmDelete Should call delete service on confirmDelete" time="0.029">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:51:59" time="0.674" tests="3">
+    <testcase classname="Component Tests Home Component Should call accountService.getAuthenticationState on init" name="Component Tests Home Component Should call accountService.getAuthenticationState on init" time="0.021">
+    </testcase>
+    <testcase classname="Component Tests Home Component Should call accountService.isAuthenticated when it checks authentication" name="Component Tests Home Component Should call accountService.isAuthenticated when it checks authentication" time="0.019">
+    </testcase>
+    <testcase classname="Component Tests Home Component Should navigate to /login on login" name="Component Tests Home Component Should navigate to /login on login" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:00" time="0.614" tests="1">
+    <testcase classname="Component Tests User Management Detail Component OnInit Should call load all on init" name="Component Tests User Management Detail Component OnInit Should call load all on init" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:00" time="0.707" tests="1">
+    <testcase classname="Component Tests MetricsComponent refresh should call refresh on init" name="Component Tests MetricsComponent refresh should call refresh on init" time="0.03">
+    </testcase>
+  </testsuite>
+  <testsuite name="ItemCountComponent test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:00" time="0.586" tests="2">
+    <testcase classname="ItemCountComponent test UI logic tests should initialize with undefined" name="ItemCountComponent test UI logic tests should initialize with undefined" time="0.028">
+    </testcase>
+    <testcase classname="ItemCountComponent test UI logic tests should change the content on page change" name="ItemCountComponent test UI logic tests should change the content on page change" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:01" time="0.523" tests="1">
+    <testcase classname="Component Tests Forms Management Component Should call load all on init" name="Component Tests Forms Management Component Should call load all on init" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="Parse links service test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:01" time="0.53" tests="4">
+    <testcase classname="Parse links service test Parse Links Service Test should throw an error when passed an empty string" name="Parse links service test Parse Links Service Test should throw an error when passed an empty string" time="0.099">
+    </testcase>
+    <testcase classname="Parse links service test Parse Links Service Test should throw an error when passed without comma" name="Parse links service test Parse Links Service Test should throw an error when passed without comma" time="0.009">
+    </testcase>
+    <testcase classname="Parse links service test Parse Links Service Test should throw an error when passed without semicolon" name="Parse links service test Parse Links Service Test should throw an error when passed without semicolon" time="0.008">
+    </testcase>
+    <testcase classname="Parse links service test Parse Links Service Test should return links when headers are passed" name="Parse links service test Parse Links Service Test should return links when headers are passed" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:01" time="0.533" tests="2">
+    <testcase classname="Component Tests Alert Component Should call alertService.get on init" name="Component Tests Alert Component Should call alertService.get on init" time="0.031">
+    </testcase>
+    <testcase classname="Component Tests Alert Component Should call alertService.clear on destroy" name="Component Tests Alert Component Should call alertService.clear on destroy" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="ApplicationConfigService" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:02" time="0.346" tests="5">
+    <testcase classname="ApplicationConfigService should be created" name="ApplicationConfigService should be created" time="0.012">
+    </testcase>
+    <testcase classname="ApplicationConfigService without prefix should return correctly" name="ApplicationConfigService without prefix should return correctly" time="0.012">
+    </testcase>
+    <testcase classname="ApplicationConfigService without prefix should return correctly when passing microservice" name="ApplicationConfigService without prefix should return correctly when passing microservice" time="0.008">
+    </testcase>
+    <testcase classname="ApplicationConfigService with prefix should return correctly" name="ApplicationConfigService with prefix should return correctly" time="0.01">
+    </testcase>
+    <testcase classname="ApplicationConfigService with prefix should return correctly when passing microservice" name="ApplicationConfigService with prefix should return correctly when passing microservice" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="TranslateDirective Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:02" time="0.394" tests="1">
+    <testcase classname="TranslateDirective Tests should change HTML" name="TranslateDirective Tests should change HTML" time="0.035">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service Tests" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:02" time="0.37" tests="1">
+    <testcase classname="Service Tests Logs Service Service methods should change log level" name="Service Tests Logs Service Service methods should change log level" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="FormatMediumDatePipe" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:02" time="0.528" tests="3">
+    <testcase classname="FormatMediumDatePipe should return an empty string when receive undefined" name="FormatMediumDatePipe should return an empty string when receive undefined" time="0.001">
+    </testcase>
+    <testcase classname="FormatMediumDatePipe should return an empty string when receive null" name="FormatMediumDatePipe should return an empty string when receive null" time="0">
+    </testcase>
+    <testcase classname="FormatMediumDatePipe should format date like this D MMM YYYY" name="FormatMediumDatePipe should format date like this D MMM YYYY" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="FormatMediumDatePipe" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:02" time="0.62" tests="3">
+    <testcase classname="FormatMediumDatePipe should return an empty string when receive undefined" name="FormatMediumDatePipe should return an empty string when receive undefined" time="0.001">
+    </testcase>
+    <testcase classname="FormatMediumDatePipe should return an empty string when receive null" name="FormatMediumDatePipe should return an empty string when receive null" time="0.001">
+    </testcase>
+    <testcase classname="FormatMediumDatePipe should format date like this D MMM YYYY" name="FormatMediumDatePipe should format date like this D MMM YYYY" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Operators Test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:03" time="0.278" tests="1">
+    <testcase classname="Operators Test isPresent should remove null and undefined values" name="Operators Test isPresent should remove null and undefined values" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Data Utils Service Test" errors="0" failures="0" skipped="0" timestamp="2021-05-08T20:52:03" time="0.311" tests="1">
+    <testcase classname="Data Utils Service Test should return the bytesize of the text" name="Data Utils Service Test should return the bytesize of the text" time="0.02">
+    </testcase>
+  </testsuite>
+</testsuites>

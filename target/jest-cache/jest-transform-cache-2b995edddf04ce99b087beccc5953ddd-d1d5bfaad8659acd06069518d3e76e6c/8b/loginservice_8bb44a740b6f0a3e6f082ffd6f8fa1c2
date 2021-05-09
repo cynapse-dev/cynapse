@@ -1,0 +1,426 @@
+457bbed6e6ce99b847eba2f923716ea1
+"use strict";
+
+/* istanbul ignore next */
+function cov_2jf4of7hac() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/login/login.service.ts";
+  var hash = "3ae482ee526c09e0b89fdc35d08a8cf5be135835";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/login/login.service.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 20
+        },
+        end: {
+          line: 6,
+          column: 45
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 26
+        },
+        end: {
+          line: 7,
+          column: 66
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 27
+        },
+        end: {
+          line: 8,
+          column: 68
+        }
+      },
+      "7": {
+        start: {
+          line: 9,
+          column: 19
+        },
+        end: {
+          line: 20,
+          column: 1
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 45
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 53
+        }
+      },
+      "10": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 127
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 90
+        },
+        end: {
+          line: 15,
+          column: 124
+        }
+      },
+      "12": {
+        start: {
+          line: 18,
+          column: 8
+        },
+        end: {
+          line: 18,
+          column: 111
+        }
+      },
+      "13": {
+        start: {
+          line: 18,
+          column: 69
+        },
+        end: {
+          line: 18,
+          column: 107
+        }
+      },
+      "14": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 17
+        }
+      },
+      "15": {
+        start: {
+          line: 25,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 10,
+            column: 4
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 10,
+            column: 52
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 10
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 23
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 15,
+            column: 84
+          },
+          end: {
+            line: 15,
+            column: 85
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 90
+          },
+          end: {
+            line: 15,
+            column: 124
+          }
+        },
+        line: 15
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 17,
+            column: 4
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 17,
+            column: 13
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        line: 17
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 18,
+            column: 63
+          },
+          end: {
+            line: 18,
+            column: 64
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 69
+          },
+          end: {
+            line: 18,
+            column: 107
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/login/login.service.ts",
+      mappings: ";;;;AAAA,wCAA2C;AAE3C,8CAA0C;AAG1C,mEAA+D;AAC/D,qEAAoE;AAIpE,IAAa,YAAY,GAAzB,MAAa,YAAY;IACvB,YAAoB,cAA8B,EAAU,kBAAsC;QAA9E,mBAAc,GAAd,cAAc,CAAgB;QAAU,uBAAkB,GAAlB,kBAAkB,CAAoB;IAAG,CAAC;IAEtG,KAAK,CAAC,WAAkB;QACtB,OAAO,IAAI,CAAC,kBAAkB,CAAC,KAAK,CAAC,WAAW,CAAC,CAAC,IAAI,CAAC,oBAAQ,CAAC,GAAG,EAAE,CAAC,IAAI,CAAC,cAAc,CAAC,QAAQ,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;IAC7G,CAAC;IAED,MAAM;QACJ,IAAI,CAAC,kBAAkB,CAAC,MAAM,EAAE,CAAC,SAAS,CAAC,EAAE,QAAQ,EAAE,GAAG,EAAE,CAAC,IAAI,CAAC,cAAc,CAAC,YAAY,CAAC,IAAI,CAAC,EAAE,CAAC,CAAC;IACzG,CAAC;CACF,CAAA;AAVY,YAAY;IADxB,iBAAU,CAAC,EAAE,UAAU,EAAE,MAAM,EAAE,CAAC;6CAEG,gCAAc,EAA8B,qCAAkB;GADvF,YAAY,CAUxB;AAVY,oCAAY",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/login/login.service.ts"],
+      sourcesContent: ["import { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { mergeMap } from 'rxjs/operators';\n\nimport { Account } from 'app/core/auth/account.model';\nimport { AccountService } from 'app/core/auth/account.service';\nimport { AuthServerProvider } from 'app/core/auth/auth-jwt.service';\nimport { Login } from './login.model';\n\n@Injectable({ providedIn: 'root' })\nexport class LoginService {\n  constructor(private accountService: AccountService, private authServerProvider: AuthServerProvider) {}\n\n  login(credentials: Login): Observable<Account | null> {\n    return this.authServerProvider.login(credentials).pipe(mergeMap(() => this.accountService.identity(true)));\n  }\n\n  logout(): void {\n    this.authServerProvider.logout().subscribe({ complete: () => this.accountService.authenticate(null) });\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "3ae482ee526c09e0b89fdc35d08a8cf5be135835"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2jf4of7hac = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2jf4of7hac();
+cov_2jf4of7hac().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2jf4of7hac().s[1]++;
+exports.LoginService = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_2jf4of7hac().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_2jf4of7hac().s[3]++, require("@angular/core"));
+const operators_1 =
+/* istanbul ignore next */
+(cov_2jf4of7hac().s[4]++, require("rxjs/operators"));
+const account_service_1 =
+/* istanbul ignore next */
+(cov_2jf4of7hac().s[5]++, require("app/core/auth/account.service"));
+const auth_jwt_service_1 =
+/* istanbul ignore next */
+(cov_2jf4of7hac().s[6]++, require("app/core/auth/auth-jwt.service"));
+
+/* istanbul ignore next */
+cov_2jf4of7hac().s[7]++;
+let LoginService = class LoginService {
+  constructor(accountService, authServerProvider) {
+    /* istanbul ignore next */
+    cov_2jf4of7hac().f[0]++;
+    cov_2jf4of7hac().s[8]++;
+    this.accountService = accountService;
+
+    /* istanbul ignore next */
+    cov_2jf4of7hac().s[9]++;
+    this.authServerProvider = authServerProvider;
+  }
+
+  login(credentials) {
+    /* istanbul ignore next */
+    cov_2jf4of7hac().f[1]++;
+    cov_2jf4of7hac().s[10]++;
+    return this.authServerProvider.login(credentials).pipe(operators_1.mergeMap(() => {
+      /* istanbul ignore next */
+      cov_2jf4of7hac().f[2]++;
+      cov_2jf4of7hac().s[11]++;
+      return this.accountService.identity(true);
+    }));
+  }
+
+  logout() {
+    /* istanbul ignore next */
+    cov_2jf4of7hac().f[3]++;
+    cov_2jf4of7hac().s[12]++;
+    this.authServerProvider.logout().subscribe({
+      complete: () => {
+        /* istanbul ignore next */
+        cov_2jf4of7hac().f[4]++;
+        cov_2jf4of7hac().s[13]++;
+        return this.accountService.authenticate(null);
+      }
+    });
+  }
+
+};
+
+/* istanbul ignore next */
+cov_2jf4of7hac().s[14]++;
+LoginService = tslib_1.__decorate([core_1.Injectable({
+  providedIn: 'root'
+}), tslib_1.__metadata("design:paramtypes", [account_service_1.AccountService, auth_jwt_service_1.AuthServerProvider])], LoginService);
+
+/* istanbul ignore next */
+cov_2jf4of7hac().s[15]++;
+exports.LoginService = LoginService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9sb2dpbi9sb2dpbi5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFlRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFmSCxNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUVBLE1BQUEsV0FBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGdCQUFBLENBQUEsQ0FBQTtBQUdBLE1BQUEsaUJBQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSwrQkFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLGtCQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZ0NBQUEsQ0FBQSxDQUFBOzs7O0FBSUEsSUFBYSxZQUFZLEdBQXpCLE1BQWEsWUFBYixDQUF5QjtBQUN2QixFQUFBLFdBQUEsQ0FBb0IsY0FBcEIsRUFBNEQsa0JBQTVELEVBQWtHO0FBQUE7QUFBQTtBQUFBO0FBQTlFLFNBQUEsY0FBQSxHQUFBLGNBQUE7O0FBQThFO0FBQUE7QUFBdEMsU0FBQSxrQkFBQSxHQUFBLGtCQUFBO0FBQTBDOztBQUV0RyxFQUFBLEtBQUssQ0FBQyxXQUFELEVBQW1CO0FBQUE7QUFBQTtBQUFBO0FBQ3RCLFdBQU8sS0FBSyxrQkFBTCxDQUF3QixLQUF4QixDQUE4QixXQUE5QixFQUEyQyxJQUEzQyxDQUFnRCxXQUFBLENBQUEsUUFBQSxDQUFTLE1BQU07QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFBSyxjQUFMLENBQW9CLFFBQXBCLENBQTZCLElBQTdCO0FBQWtDLEtBQWpELENBQWhELENBQVA7QUFDRDs7QUFFRCxFQUFBLE1BQU0sR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNKLFNBQUssa0JBQUwsQ0FBd0IsTUFBeEIsR0FBaUMsU0FBakMsQ0FBMkM7QUFBRSxNQUFBLFFBQVEsRUFBRSxNQUFNO0FBQUE7QUFBQTtBQUFBO0FBQUEsb0JBQUssY0FBTCxDQUFvQixZQUFwQixDQUFpQyxJQUFqQztBQUFzQztBQUF4RCxLQUEzQztBQUNEOztBQVRzQixDQUF6Qjs7OztBQUFhLFlBQVksR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBRHhCLE1BQUEsQ0FBQSxVQUFBLENBQVc7QUFBRSxFQUFBLFVBQVUsRUFBRTtBQUFkLENBQVgsQ0FDd0IsRSx5Q0FDYSxpQkFBQSxDQUFBLGMsRUFBNEMsa0JBQUEsQ0FBQSxrQixFQUR6RCxDQUFBLEVBQVosWUFBWSxDQUFaOzs7O0FBQUEsT0FBQSxDQUFBLFlBQUEsR0FBQSxZQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgT2JzZXJ2YWJsZSB9IGZyb20gJ3J4anMnO1xuaW1wb3J0IHsgbWVyZ2VNYXAgfSBmcm9tICdyeGpzL29wZXJhdG9ycyc7XG5cbmltcG9ydCB7IEFjY291bnQgfSBmcm9tICdhcHAvY29yZS9hdXRoL2FjY291bnQubW9kZWwnO1xuaW1wb3J0IHsgQWNjb3VudFNlcnZpY2UgfSBmcm9tICdhcHAvY29yZS9hdXRoL2FjY291bnQuc2VydmljZSc7XG5pbXBvcnQgeyBBdXRoU2VydmVyUHJvdmlkZXIgfSBmcm9tICdhcHAvY29yZS9hdXRoL2F1dGgtand0LnNlcnZpY2UnO1xuaW1wb3J0IHsgTG9naW4gfSBmcm9tICcuL2xvZ2luLm1vZGVsJztcblxuQEluamVjdGFibGUoeyBwcm92aWRlZEluOiAncm9vdCcgfSlcbmV4cG9ydCBjbGFzcyBMb2dpblNlcnZpY2Uge1xuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGFjY291bnRTZXJ2aWNlOiBBY2NvdW50U2VydmljZSwgcHJpdmF0ZSBhdXRoU2VydmVyUHJvdmlkZXI6IEF1dGhTZXJ2ZXJQcm92aWRlcikge31cblxuICBsb2dpbihjcmVkZW50aWFsczogTG9naW4pOiBPYnNlcnZhYmxlPEFjY291bnQgfCBudWxsPiB7XG4gICAgcmV0dXJuIHRoaXMuYXV0aFNlcnZlclByb3ZpZGVyLmxvZ2luKGNyZWRlbnRpYWxzKS5waXBlKG1lcmdlTWFwKCgpID0+IHRoaXMuYWNjb3VudFNlcnZpY2UuaWRlbnRpdHkodHJ1ZSkpKTtcbiAgfVxuXG4gIGxvZ291dCgpOiB2b2lkIHtcbiAgICB0aGlzLmF1dGhTZXJ2ZXJQcm92aWRlci5sb2dvdXQoKS5zdWJzY3JpYmUoeyBjb21wbGV0ZTogKCkgPT4gdGhpcy5hY2NvdW50U2VydmljZS5hdXRoZW50aWNhdGUobnVsbCkgfSk7XG4gIH1cbn1cbiJdfQ==

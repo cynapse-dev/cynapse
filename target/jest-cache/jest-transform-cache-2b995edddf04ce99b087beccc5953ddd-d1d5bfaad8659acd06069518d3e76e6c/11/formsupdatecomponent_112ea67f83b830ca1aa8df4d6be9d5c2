@@ -1,0 +1,51 @@
+2dcaa90204e6a3b708f42946c23c9487
+/* istanbul ignore next */
+function cov_153394tvty() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/update/forms-update.component.html";
+  var hash = "46d16fb9ed17f6abb6c4e0a2d4e789201b73930b";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/update/forms-update.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 6827
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "46d16fb9ed17f6abb6c4e0a2d4e789201b73930b"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_153394tvty = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_153394tvty();
+cov_153394tvty().s[0]++;
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-8\">\n    <form name=\"editForm\" role=\"form\" novalidate (ngSubmit)=\"save()\" [formGroup]=\"editForm\">\n      <h2 id=\"jhi-forms-heading\" data-cy=\"FormsCreateUpdateHeading\" jhiTranslate=\"cynapseTechApp.forms.home.createOrEditLabel\">\n        Create or edit a Forms\n      </h2>\n\n      <div>\n        <jhi-alert-error></jhi-alert-error>\n\n        <div class=\"form-group\" [hidden]=\"editForm.get('id')!.value == null\">\n          <label class=\"form-control-label\" jhiTranslate=\"global.field.id\" for=\"field_id\">ID</label>\n          <input type=\"number\" class=\"form-control\" name=\"id\" id=\"field_id\" data-cy=\"id\" formControlName=\"id\" [readonly]=\"true\" />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.name\" for=\"field_name\">Name</label>\n          <input type=\"text\" class=\"form-control\" name=\"name\" id=\"field_name\" data-cy=\"name\" formControlName=\"name\" />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.cynapseId\" for=\"field_cynapseId\">Cynapse Id</label>\n          <input type=\"text\" class=\"form-control\" name=\"cynapseId\" id=\"field_cynapseId\" data-cy=\"cynapseId\" formControlName=\"cynapseId\" />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.emailId\" for=\"field_emailId\">Email Id</label>\n          <input type=\"text\" class=\"form-control\" name=\"emailId\" id=\"field_emailId\" data-cy=\"emailId\" formControlName=\"emailId\" />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.phoneNumber\" for=\"field_phoneNumber\">Phone Number</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"phoneNumber\"\n            id=\"field_phoneNumber\"\n            data-cy=\"phoneNumber\"\n            formControlName=\"phoneNumber\"\n          />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.createdDate\" for=\"field_createdDate\">Created Date</label>\n          <div class=\"input-group\">\n            <input\n              id=\"field_createdDate\"\n              data-cy=\"createdDate\"\n              type=\"text\"\n              class=\"form-control\"\n              name=\"createdDate\"\n              ngbDatepicker\n              #createdDateDp=\"ngbDatepicker\"\n              formControlName=\"createdDate\"\n            />\n            <span class=\"input-group-append\">\n              <button type=\"button\" class=\"btn btn-secondary\" (click)=\"createdDateDp.toggle()\">\n                <fa-icon icon=\"calendar-alt\"></fa-icon>\n              </button>\n            </span>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.referalCode\" for=\"field_referalCode\">Referal Code</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"referalCode\"\n            id=\"field_referalCode\"\n            data-cy=\"referalCode\"\n            formControlName=\"referalCode\"\n          />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.formDocument\" for=\"field_formDocument\">Form Document</label>\n          <div>\n            <img\n              [src]=\"'data:' + editForm.get('formDocumentContentType')!.value + ';base64,' + editForm.get('formDocument')!.value\"\n              style=\"max-height: 100px\"\n              *ngIf=\"editForm.get('formDocument')!.value\"\n              alt=\"forms image\"\n            />\n            <div *ngIf=\"editForm.get('formDocument')!.value\" class=\"form-text text-danger clearfix\">\n              <span class=\"pull-left\"\n                >{{ editForm.get('formDocumentContentType')!.value }}, {{ byteSize(editForm.get('formDocument')!.value) }}</span\n              >\n              <button\n                type=\"button\"\n                (click)=\"clearInputImage('formDocument', 'formDocumentContentType', 'file_formDocument')\"\n                class=\"btn btn-secondary btn-xs pull-right\"\n              >\n                <fa-icon icon=\"times\"></fa-icon>\n              </button>\n            </div>\n            <input\n              type=\"file\"\n              id=\"file_formDocument\"\n              data-cy=\"formDocument\"\n              (change)=\"setFileData($event, 'formDocument', true)\"\n              accept=\"image/*\"\n              jhiTranslate=\"entity.action.addimage\"\n            />\n          </div>\n          <input\n            type=\"hidden\"\n            class=\"form-control\"\n            name=\"formDocument\"\n            id=\"field_formDocument\"\n            data-cy=\"formDocument\"\n            formControlName=\"formDocument\"\n          />\n          <input\n            type=\"hidden\"\n            class=\"form-control\"\n            name=\"formDocumentContentType\"\n            id=\"field_formDocumentContentType\"\n            formControlName=\"formDocumentContentType\"\n          />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" jhiTranslate=\"cynapseTechApp.forms.user\" for=\"field_user\">User</label>\n          <select class=\"form-control\" id=\"field_user\" data-cy=\"user\" name=\"user\" formControlName=\"user\">\n            <option [ngValue]=\"null\"></option>\n            <option\n              [ngValue]=\"userOption.id === editForm.get('user')!.value?.id ? editForm.get('user')!.value : userOption\"\n              *ngFor=\"let userOption of usersSharedCollection; trackBy: trackUserById\"\n            >\n              {{ userOption.id }}\n            </option>\n          </select>\n        </div>\n      </div>\n\n      <div>\n        <button type=\"button\" id=\"cancel-save\" class=\"btn btn-secondary\" (click)=\"previousState()\">\n          <fa-icon icon=\"ban\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.cancel\">Cancel</span>\n        </button>\n\n        <button\n          type=\"submit\"\n          id=\"save-entity\"\n          data-cy=\"entityCreateSaveButton\"\n          [disabled]=\"editForm.invalid || isSaving\"\n          class=\"btn btn-primary\"\n        >\n          <fa-icon icon=\"save\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.save\">Save</span>\n        </button>\n      </div>\n    </form>\n  </div>\n</div>\n";

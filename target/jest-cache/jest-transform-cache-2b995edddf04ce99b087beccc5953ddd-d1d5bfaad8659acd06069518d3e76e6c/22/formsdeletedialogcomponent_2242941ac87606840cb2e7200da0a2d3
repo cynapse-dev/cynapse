@@ -1,0 +1,369 @@
+2853cb2b3eb02bbad1502932b0d423e0
+"use strict";
+
+/* istanbul ignore next */
+function cov_w7z5suf6m() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/delete/forms-delete-dialog.component.ts";
+  var hash = "10a576adab8a99115adeb452a9307f79072a0a89";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/delete/forms-delete-dialog.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 44
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 23
+        },
+        end: {
+          line: 6,
+          column: 60
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 7,
+          column: 59
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 33
+        },
+        end: {
+          line: 21,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 41
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 39
+        }
+      },
+      "9": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 35
+        }
+      },
+      "10": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 19,
+          column: 11
+        }
+      },
+      "11": {
+        start: {
+          line: 18,
+          column: 12
+        },
+        end: {
+          line: 18,
+          column: 46
+        }
+      },
+      "12": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 27,
+          column: 31
+        }
+      },
+      "13": {
+        start: {
+          line: 28,
+          column: 0
+        },
+        end: {
+          line: 28,
+          column: 64
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 43
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 13
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 22
+          },
+          end: {
+            line: 20,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 17,
+            column: 47
+          },
+          end: {
+            line: 17,
+            column: 48
+          }
+        },
+        loc: {
+          start: {
+            line: 17,
+            column: 53
+          },
+          end: {
+            line: 19,
+            column: 9
+          }
+        },
+        line: 17
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/delete/forms-delete-dialog.component.ts",
+      mappings: ";;;;AAAA,wCAA0C;AAC1C,6DAA4D;AAG5D,4DAAwD;AAKxD,IAAa,0BAA0B,GAAvC,MAAa,0BAA0B;IAGrC,YAAsB,YAA0B,EAAS,WAA2B;QAA9D,iBAAY,GAAZ,YAAY,CAAc;QAAS,gBAAW,GAAX,WAAW,CAAgB;IAAG,CAAC;IAExF,MAAM;QACJ,IAAI,CAAC,WAAW,CAAC,OAAO,EAAE,CAAC;IAC7B,CAAC;IAED,aAAa,CAAC,EAAU;QACtB,IAAI,CAAC,YAAY,CAAC,MAAM,CAAC,EAAE,CAAC,CAAC,SAAS,CAAC,GAAG,EAAE;YAC1C,IAAI,CAAC,WAAW,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC;QACpC,CAAC,CAAC,CAAC;IACL,CAAC;CACF,CAAA;AAdY,0BAA0B;IAHtC,gBAAS,CAAC;QACT,kBAAa,sCAAsC,CAAA;KACpD,CAAC;6CAIoC,4BAAY,EAAsB,6BAAc;GAHzE,0BAA0B,CActC;AAdY,gEAA0B",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/delete/forms-delete-dialog.component.ts"],
+      sourcesContent: ["import { Component } from '@angular/core';\nimport { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';\n\nimport { IForms } from '../forms.model';\nimport { FormsService } from '../service/forms.service';\n\n@Component({\n  templateUrl: './forms-delete-dialog.component.html',\n})\nexport class FormsDeleteDialogComponent {\n  forms?: IForms;\n\n  constructor(protected formsService: FormsService, public activeModal: NgbActiveModal) {}\n\n  cancel(): void {\n    this.activeModal.dismiss();\n  }\n\n  confirmDelete(id: number): void {\n    this.formsService.delete(id).subscribe(() => {\n      this.activeModal.close('deleted');\n    });\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "10a576adab8a99115adeb452a9307f79072a0a89"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_w7z5suf6m = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_w7z5suf6m();
+cov_w7z5suf6m().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_w7z5suf6m().s[1]++;
+exports.FormsDeleteDialogComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_w7z5suf6m().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_w7z5suf6m().s[3]++, require("@angular/core"));
+const ng_bootstrap_1 =
+/* istanbul ignore next */
+(cov_w7z5suf6m().s[4]++, require("@ng-bootstrap/ng-bootstrap"));
+const forms_service_1 =
+/* istanbul ignore next */
+(cov_w7z5suf6m().s[5]++, require("../service/forms.service"));
+
+/* istanbul ignore next */
+cov_w7z5suf6m().s[6]++;
+let FormsDeleteDialogComponent = class FormsDeleteDialogComponent {
+  constructor(formsService, activeModal) {
+    /* istanbul ignore next */
+    cov_w7z5suf6m().f[0]++;
+    cov_w7z5suf6m().s[7]++;
+    this.formsService = formsService;
+
+    /* istanbul ignore next */
+    cov_w7z5suf6m().s[8]++;
+    this.activeModal = activeModal;
+  }
+
+  cancel() {
+    /* istanbul ignore next */
+    cov_w7z5suf6m().f[1]++;
+    cov_w7z5suf6m().s[9]++;
+    this.activeModal.dismiss();
+  }
+
+  confirmDelete(id) {
+    /* istanbul ignore next */
+    cov_w7z5suf6m().f[2]++;
+    cov_w7z5suf6m().s[10]++;
+    this.formsService.delete(id).subscribe(() => {
+      /* istanbul ignore next */
+      cov_w7z5suf6m().f[3]++;
+      cov_w7z5suf6m().s[11]++;
+      this.activeModal.close('deleted');
+    });
+  }
+
+};
+
+/* istanbul ignore next */
+cov_w7z5suf6m().s[12]++;
+FormsDeleteDialogComponent = tslib_1.__decorate([core_1.Component({
+  template: require('./forms-delete-dialog.component.html')
+}), tslib_1.__metadata("design:paramtypes", [forms_service_1.FormsService, ng_bootstrap_1.NgbActiveModal])], FormsDeleteDialogComponent);
+
+/* istanbul ignore next */
+cov_w7z5suf6m().s[13]++;
+exports.FormsDeleteDialogComponent = FormsDeleteDialogComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9lbnRpdGllcy9mb3Jtcy9kZWxldGUvZm9ybXMtZGVsZXRlLWRpYWxvZy5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFrQkU7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbEJGLE1BQUEsTUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBO0FBQ0EsTUFBQSxjQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsNEJBQUEsQ0FBQSxDQUFBO0FBR0EsTUFBQSxlQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsMEJBQUEsQ0FBQSxDQUFBOzs7O0FBS0EsSUFBYSwwQkFBMEIsR0FBdkMsTUFBYSwwQkFBYixDQUF1QztBQUdyQyxFQUFBLFdBQUEsQ0FBc0IsWUFBdEIsRUFBeUQsV0FBekQsRUFBb0Y7QUFBQTtBQUFBO0FBQUE7QUFBOUQsU0FBQSxZQUFBLEdBQUEsWUFBQTs7QUFBOEQ7QUFBQTtBQUEzQixTQUFBLFdBQUEsR0FBQSxXQUFBO0FBQStCOztBQUV4RixFQUFBLE1BQU0sR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNKLFNBQUssV0FBTCxDQUFpQixPQUFqQjtBQUNEOztBQUVELEVBQUEsYUFBYSxDQUFDLEVBQUQsRUFBVztBQUFBO0FBQUE7QUFBQTtBQUN0QixTQUFLLFlBQUwsQ0FBa0IsTUFBbEIsQ0FBeUIsRUFBekIsRUFBNkIsU0FBN0IsQ0FBdUMsTUFBSztBQUFBO0FBQUE7QUFBQTtBQUMxQyxXQUFLLFdBQUwsQ0FBaUIsS0FBakIsQ0FBdUIsU0FBdkI7QUFDRCxLQUZEO0FBR0Q7O0FBYm9DLENBQXZDOzs7O0FBQWEsMEJBQTBCLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUh0QyxNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFBLEVBQUEsT0FBQSxDQUFhLHNDQUFiO0FBRFMsQ0FBVixDQUdzQyxFLHlDQUdELGVBQUEsQ0FBQSxZLEVBQWtDLGNBQUEsQ0FBQSxjLEVBSGpDLENBQUEsRUFBMUIsMEJBQTBCLENBQTFCOzs7O0FBQUEsT0FBQSxDQUFBLDBCQUFBLEdBQUEsMEJBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IE5nYkFjdGl2ZU1vZGFsIH0gZnJvbSAnQG5nLWJvb3RzdHJhcC9uZy1ib290c3RyYXAnO1xuXG5pbXBvcnQgeyBJRm9ybXMgfSBmcm9tICcuLi9mb3Jtcy5tb2RlbCc7XG5pbXBvcnQgeyBGb3Jtc1NlcnZpY2UgfSBmcm9tICcuLi9zZXJ2aWNlL2Zvcm1zLnNlcnZpY2UnO1xuXG5AQ29tcG9uZW50KHtcbiAgdGVtcGxhdGVVcmw6ICcuL2Zvcm1zLWRlbGV0ZS1kaWFsb2cuY29tcG9uZW50Lmh0bWwnLFxufSlcbmV4cG9ydCBjbGFzcyBGb3Jtc0RlbGV0ZURpYWxvZ0NvbXBvbmVudCB7XG4gIGZvcm1zPzogSUZvcm1zO1xuXG4gIGNvbnN0cnVjdG9yKHByb3RlY3RlZCBmb3Jtc1NlcnZpY2U6IEZvcm1zU2VydmljZSwgcHVibGljIGFjdGl2ZU1vZGFsOiBOZ2JBY3RpdmVNb2RhbCkge31cblxuICBjYW5jZWwoKTogdm9pZCB7XG4gICAgdGhpcy5hY3RpdmVNb2RhbC5kaXNtaXNzKCk7XG4gIH1cblxuICBjb25maXJtRGVsZXRlKGlkOiBudW1iZXIpOiB2b2lkIHtcbiAgICB0aGlzLmZvcm1zU2VydmljZS5kZWxldGUoaWQpLnN1YnNjcmliZSgoKSA9PiB7XG4gICAgICB0aGlzLmFjdGl2ZU1vZGFsLmNsb3NlKCdkZWxldGVkJyk7XG4gICAgfSk7XG4gIH1cbn1cbiJdfQ==

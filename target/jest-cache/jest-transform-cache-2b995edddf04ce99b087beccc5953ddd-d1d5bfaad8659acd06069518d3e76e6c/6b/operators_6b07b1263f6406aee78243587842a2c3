@@ -1,0 +1,183 @@
+793c23b3273bd135e8ecbc19c20f46ea
+"use strict";
+
+/* istanbul ignore next */
+function cov_2em9xfwral() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/core/util/operators.ts";
+  var hash = "9813117825a3ad64dbb65dc4fc663e54262e3985";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/core/util/operators.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 27
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 4
+        },
+        end: {
+          line: 9,
+          column: 41
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 30
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "isPresent",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 22
+          },
+          end: {
+            line: 10,
+            column: 1
+          }
+        },
+        line: 8
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 9,
+            column: 11
+          },
+          end: {
+            line: 9,
+            column: 40
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 9,
+            column: 11
+          },
+          end: {
+            line: 9,
+            column: 26
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 30
+          },
+          end: {
+            line: 9,
+            column: 40
+          }
+        }],
+        line: 9
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/core/util/operators.ts",
+      mappings: ";;;AAAA;;;GAGG;AACH,SAAgB,SAAS,CAAI,CAA8B;IACzD,OAAO,CAAC,KAAK,SAAS,IAAI,CAAC,KAAK,IAAI,CAAC;AACvC,CAAC;AAFD,8BAEC",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/core/util/operators.ts"],
+      sourcesContent: ["/*\n * Function used to workaround https://github.com/microsoft/TypeScript/issues/16069\n * es2019 alternative `const filteredArr = myArr.flatMap((x) => x ? x : []);`\n */\nexport function isPresent<T>(t: T | undefined | null | void): t is T {\n  return t !== undefined && t !== null;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9813117825a3ad64dbb65dc4fc663e54262e3985"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2em9xfwral = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2em9xfwral();
+cov_2em9xfwral().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2em9xfwral().s[1]++;
+exports.isPresent = void 0;
+/*
+ * Function used to workaround https://github.com/microsoft/TypeScript/issues/16069
+ * es2019 alternative `const filteredArr = myArr.flatMap((x) => x ? x : []);`
+ */
+
+function isPresent(t) {
+  /* istanbul ignore next */
+  cov_2em9xfwral().f[0]++;
+  cov_2em9xfwral().s[2]++;
+  return (
+    /* istanbul ignore next */
+    (cov_2em9xfwral().b[0][0]++, t !== undefined) &&
+    /* istanbul ignore next */
+    (cov_2em9xfwral().b[0][1]++, t !== null)
+  );
+}
+
+/* istanbul ignore next */
+cov_2em9xfwral().s[3]++;
+exports.isPresent = isPresent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9jb3JlL3V0aWwvb3BlcmF0b3JzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7OztBQUdHOztBQUNILFNBQWdCLFNBQWhCLENBQTZCLENBQTdCLEVBQTJEO0FBQUE7QUFBQTtBQUFBO0FBQ3pELFNBQU87QUFBQTtBQUFBLGlDQUFBLENBQUMsS0FBSyxTQUFOO0FBQUE7QUFBQSxpQ0FBbUIsQ0FBQyxLQUFLLElBQXpCO0FBQVA7QUFDRDs7OztBQUZELE9BQUEsQ0FBQSxTQUFBLEdBQUEsU0FBQSIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBGdW5jdGlvbiB1c2VkIHRvIHdvcmthcm91bmQgaHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC9UeXBlU2NyaXB0L2lzc3Vlcy8xNjA2OVxuICogZXMyMDE5IGFsdGVybmF0aXZlIGBjb25zdCBmaWx0ZXJlZEFyciA9IG15QXJyLmZsYXRNYXAoKHgpID0+IHggPyB4IDogW10pO2BcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIGlzUHJlc2VudDxUPih0OiBUIHwgdW5kZWZpbmVkIHwgbnVsbCB8IHZvaWQpOiB0IGlzIFQge1xuICByZXR1cm4gdCAhPT0gdW5kZWZpbmVkICYmIHQgIT09IG51bGw7XG59XG4iXX0=

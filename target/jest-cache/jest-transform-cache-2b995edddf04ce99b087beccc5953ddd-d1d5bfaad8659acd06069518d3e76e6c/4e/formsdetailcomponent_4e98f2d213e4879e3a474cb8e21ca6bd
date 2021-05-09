@@ -1,0 +1,51 @@
+b2d97afc482a1cacac5889c1a1de2981
+/* istanbul ignore next */
+function cov_17tkwy9pdz() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/detail/forms-detail.component.html";
+  var hash = "e937a37fb2da8bf79542f624bd6b3c66b006effe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/detail/forms-detail.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 2787
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e937a37fb2da8bf79542f624bd6b3c66b006effe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_17tkwy9pdz = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_17tkwy9pdz();
+cov_17tkwy9pdz().s[0]++;
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-8\">\n    <div *ngIf=\"forms\">\n      <h2 data-cy=\"formsDetailsHeading\"><span jhiTranslate=\"cynapseTechApp.forms.detail.title\">Forms</span></h2>\n\n      <hr />\n\n      <jhi-alert-error></jhi-alert-error>\n\n      <jhi-alert></jhi-alert>\n\n      <dl class=\"row-md jh-entity-details\">\n        <dt><span jhiTranslate=\"global.field.id\">ID</span></dt>\n        <dd>\n          <span>{{ forms.id }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.name\">Name</span></dt>\n        <dd>\n          <span>{{ forms.name }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.cynapseId\">Cynapse Id</span></dt>\n        <dd>\n          <span>{{ forms.cynapseId }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.emailId\">Email Id</span></dt>\n        <dd>\n          <span>{{ forms.emailId }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.phoneNumber\">Phone Number</span></dt>\n        <dd>\n          <span>{{ forms.phoneNumber }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.createdDate\">Created Date</span></dt>\n        <dd>\n          <span>{{ forms.createdDate | formatMediumDate }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.referalCode\">Referal Code</span></dt>\n        <dd>\n          <span>{{ forms.referalCode }}</span>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.formDocument\">Form Document</span></dt>\n        <dd>\n          <div *ngIf=\"forms.formDocument\">\n            <a (click)=\"openFile(forms.formDocument, forms.formDocumentContentType)\">\n              <img\n                [src]=\"'data:' + forms.formDocumentContentType + ';base64,' + forms.formDocument\"\n                style=\"max-width: 100%\"\n                alt=\"forms image\"\n              />\n            </a>\n            {{ forms.formDocumentContentType }}, {{ byteSize(forms.formDocument) }}\n          </div>\n        </dd>\n        <dt><span jhiTranslate=\"cynapseTechApp.forms.user\">User</span></dt>\n        <dd>\n          <span>{{ forms.user?.id }}</span>\n        </dd>\n      </dl>\n\n      <button type=\"submit\" (click)=\"previousState()\" class=\"btn btn-info\" data-cy=\"entityDetailsBackButton\">\n        <fa-icon icon=\"arrow-left\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.back\">Back</span>\n      </button>\n\n      <button type=\"button\" [routerLink]=\"['/forms', forms.id, 'edit']\" class=\"btn btn-primary\">\n        <fa-icon icon=\"pencil-alt\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.edit\">Edit</span>\n      </button>\n    </div>\n  </div>\n</div>\n";

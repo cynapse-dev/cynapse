@@ -1,0 +1,31 @@
+{
+  "cynapseTechApp": {
+    "forms": {
+      "home": {
+        "title": "Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Forms",
+        "createOrEditLabel": "Create or edit a Forms",
+        "notFound": "No Forms found"
+      },
+      "created": "A new Forms is created with identifier {{ param }}",
+      "updated": "A Forms is updated with identifier {{ param }}",
+      "deleted": "A Forms is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Forms {{ id }}?"
+      },
+      "detail": {
+        "title": "Forms"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cynapseId": "Cynapse Id",
+      "emailId": "Email Id",
+      "phoneNumber": "Phone Number",
+      "createdDate": "Created Date",
+      "referalCode": "Referal Code",
+      "formDocument": "Form Document",
+      "user": "User"
+    }
+  }
+}

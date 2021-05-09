@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TokenProvider.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Cynapse Tech</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.myapp.security.jwt</a> &gt; <span class="el_source">TokenProvider.java</span></div><h1>TokenProvider.java</h1><pre class="source lang-java linenums">package com.mycompany.myapp.security.jwt;
+
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import java.nio.charset.StandardCharsets;
+import java.security.Key;
+import java.util.*;
+import java.util.stream.Collectors;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
+import tech.jhipster.config.JHipsterProperties;
+
+@Component
+public class TokenProvider {
+
+<span class="fc" id="L24">    private final Logger log = LoggerFactory.getLogger(TokenProvider.class);</span>
+
+    private static final String AUTHORITIES_KEY = &quot;auth&quot;;
+
+    private final Key key;
+
+    private final JwtParser jwtParser;
+
+    private final long tokenValidityInMilliseconds;
+
+    private final long tokenValidityInMillisecondsForRememberMe;
+
+<span class="fc" id="L36">    public TokenProvider(JHipsterProperties jHipsterProperties) {</span>
+        byte[] keyBytes;
+<span class="fc" id="L38">        String secret = jHipsterProperties.getSecurity().getAuthentication().getJwt().getSecret();</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (!ObjectUtils.isEmpty(secret)) {</span>
+<span class="fc" id="L40">            log.warn(</span>
+                &quot;Warning: the JWT key used is not Base64-encoded. &quot; +
+                &quot;We recommend using the `jhipster.security.authentication.jwt.base64-secret` key for optimum security.&quot;
+            );
+<span class="fc" id="L44">            keyBytes = secret.getBytes(StandardCharsets.UTF_8);</span>
+        } else {
+<span class="fc" id="L46">            log.debug(&quot;Using a Base64-encoded JWT secret key&quot;);</span>
+<span class="fc" id="L47">            keyBytes = Decoders.BASE64.decode(jHipsterProperties.getSecurity().getAuthentication().getJwt().getBase64Secret());</span>
+        }
+<span class="fc" id="L49">        key = Keys.hmacShaKeyFor(keyBytes);</span>
+<span class="fc" id="L50">        jwtParser = Jwts.parserBuilder().setSigningKey(key).build();</span>
+<span class="fc" id="L51">        this.tokenValidityInMilliseconds = 1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();</span>
+<span class="fc" id="L52">        this.tokenValidityInMillisecondsForRememberMe =</span>
+<span class="fc" id="L53">            1000 * jHipsterProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSecondsForRememberMe();</span>
+<span class="fc" id="L54">    }</span>
+
+    public String createToken(Authentication authentication, boolean rememberMe) {
+<span class="fc" id="L57">        String authorities = authentication.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.joining(&quot;,&quot;));</span>
+
+<span class="fc" id="L59">        long now = (new Date()).getTime();</span>
+        Date validity;
+<span class="pc bpc" id="L61" title="1 of 2 branches missed.">        if (rememberMe) {</span>
+<span class="nc" id="L62">            validity = new Date(now + this.tokenValidityInMillisecondsForRememberMe);</span>
+        } else {
+<span class="fc" id="L64">            validity = new Date(now + this.tokenValidityInMilliseconds);</span>
+        }
+
+<span class="fc" id="L67">        return Jwts</span>
+<span class="fc" id="L68">            .builder()</span>
+<span class="fc" id="L69">            .setSubject(authentication.getName())</span>
+<span class="fc" id="L70">            .claim(AUTHORITIES_KEY, authorities)</span>
+<span class="fc" id="L71">            .signWith(key, SignatureAlgorithm.HS512)</span>
+<span class="fc" id="L72">            .setExpiration(validity)</span>
+<span class="fc" id="L73">            .compact();</span>
+    }
+
+    public Authentication getAuthentication(String token) {
+<span class="fc" id="L77">        Claims claims = jwtParser.parseClaimsJws(token).getBody();</span>
+
+<span class="fc" id="L79">        Collection&lt;? extends GrantedAuthority&gt; authorities = Arrays</span>
+<span class="fc" id="L80">            .stream(claims.get(AUTHORITIES_KEY).toString().split(&quot;,&quot;))</span>
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">            .filter(auth -&gt; !auth.trim().isEmpty())</span>
+<span class="fc" id="L82">            .map(SimpleGrantedAuthority::new)</span>
+<span class="fc" id="L83">            .collect(Collectors.toList());</span>
+
+<span class="fc" id="L85">        User principal = new User(claims.getSubject(), &quot;&quot;, authorities);</span>
+
+<span class="fc" id="L87">        return new UsernamePasswordAuthenticationToken(principal, token, authorities);</span>
+    }
+
+    public boolean validateToken(String authToken) {
+        try {
+<span class="fc" id="L92">            jwtParser.parseClaimsJws(authToken);</span>
+<span class="fc" id="L93">            return true;</span>
+<span class="fc" id="L94">        } catch (JwtException | IllegalArgumentException e) {</span>
+<span class="fc" id="L95">            log.info(&quot;Invalid JWT token.&quot;);</span>
+<span class="fc" id="L96">            log.trace(&quot;Invalid JWT token trace.&quot;, e);</span>
+        }
+<span class="fc" id="L98">        return false;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

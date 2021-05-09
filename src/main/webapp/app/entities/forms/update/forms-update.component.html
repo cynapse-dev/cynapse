@@ -1,0 +1,154 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-forms-heading" data-cy="FormsCreateUpdateHeading" jhiTranslate="cynapseTechApp.forms.home.createOrEditLabel">
+        Create or edit a Forms
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="form-group" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-control-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.name" for="field_name">Name</label>
+          <input type="text" class="form-control" name="name" id="field_name" data-cy="name" formControlName="name" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.cynapseId" for="field_cynapseId">Cynapse Id</label>
+          <input type="text" class="form-control" name="cynapseId" id="field_cynapseId" data-cy="cynapseId" formControlName="cynapseId" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.emailId" for="field_emailId">Email Id</label>
+          <input type="text" class="form-control" name="emailId" id="field_emailId" data-cy="emailId" formControlName="emailId" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.phoneNumber" for="field_phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            name="phoneNumber"
+            id="field_phoneNumber"
+            data-cy="phoneNumber"
+            formControlName="phoneNumber"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.createdDate" for="field_createdDate">Created Date</label>
+          <div class="input-group">
+            <input
+              id="field_createdDate"
+              data-cy="createdDate"
+              type="text"
+              class="form-control"
+              name="createdDate"
+              ngbDatepicker
+              #createdDateDp="ngbDatepicker"
+              formControlName="createdDate"
+            />
+            <span class="input-group-append">
+              <button type="button" class="btn btn-secondary" (click)="createdDateDp.toggle()">
+                <fa-icon icon="calendar-alt"></fa-icon>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.referalCode" for="field_referalCode">Referal Code</label>
+          <input
+            type="text"
+            class="form-control"
+            name="referalCode"
+            id="field_referalCode"
+            data-cy="referalCode"
+            formControlName="referalCode"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.formDocument" for="field_formDocument">Form Document</label>
+          <div>
+            <img
+              [src]="'data:' + editForm.get('formDocumentContentType')!.value + ';base64,' + editForm.get('formDocument')!.value"
+              style="max-height: 100px"
+              *ngIf="editForm.get('formDocument')!.value"
+              alt="forms image"
+            />
+            <div *ngIf="editForm.get('formDocument')!.value" class="form-text text-danger clearfix">
+              <span class="pull-left"
+                >{{ editForm.get('formDocumentContentType')!.value }}, {{ byteSize(editForm.get('formDocument')!.value) }}</span
+              >
+              <button
+                type="button"
+                (click)="clearInputImage('formDocument', 'formDocumentContentType', 'file_formDocument')"
+                class="btn btn-secondary btn-xs pull-right"
+              >
+                <fa-icon icon="times"></fa-icon>
+              </button>
+            </div>
+            <input
+              type="file"
+              id="file_formDocument"
+              data-cy="formDocument"
+              (change)="setFileData($event, 'formDocument', true)"
+              accept="image/*"
+              jhiTranslate="entity.action.addimage"
+            />
+          </div>
+          <input
+            type="hidden"
+            class="form-control"
+            name="formDocument"
+            id="field_formDocument"
+            data-cy="formDocument"
+            formControlName="formDocument"
+          />
+          <input
+            type="hidden"
+            class="form-control"
+            name="formDocumentContentType"
+            id="field_formDocumentContentType"
+            formControlName="formDocumentContentType"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="cynapseTechApp.forms.user" for="field_user">User</label>
+          <select class="form-control" id="field_user" data-cy="user" name="user" formControlName="user">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="userOption.id === editForm.get('user')!.value?.id ? editForm.get('user')!.value : userOption"
+              *ngFor="let userOption of usersSharedCollection; trackBy: trackUserById"
+            >
+              {{ userOption.id }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+9def1361c3821bd20aa295ad90e4897a
+/* istanbul ignore next */
+function cov_ian0xprrj() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/list/forms.component.html";
+  var hash = "a7787e690897a43413d082a81e38a551bbd09793";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/entities/forms/list/forms.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 4500
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a7787e690897a43413d082a81e38a551bbd09793"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ian0xprrj = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_ian0xprrj();
+cov_ian0xprrj().s[0]++;
+module.exports = "<div>\n  <h2 id=\"page-heading\" data-cy=\"FormsHeading\">\n    <span jhiTranslate=\"cynapseTechApp.forms.home.title\">Forms</span>\n\n    <div class=\"d-flex justify-content-end\">\n      <button class=\"btn btn-info mr-2\" (click)=\"loadAll()\" [disabled]=\"isLoading\">\n        <fa-icon icon=\"sync\" [spin]=\"isLoading\"></fa-icon>\n        <span jhiTranslate=\"cynapseTechApp.forms.home.refreshListLabel\">Refresh List</span>\n      </button>\n\n      <button\n        id=\"jh-create-entity\"\n        data-cy=\"entityCreateButton\"\n        class=\"btn btn-primary jh-create-entity create-forms\"\n        [routerLink]=\"['/forms/new']\"\n      >\n        <fa-icon icon=\"plus\"></fa-icon>\n        <span jhiTranslate=\"cynapseTechApp.forms.home.createLabel\"> Create a new Forms </span>\n      </button>\n    </div>\n  </h2>\n\n  <jhi-alert-error></jhi-alert-error>\n\n  <jhi-alert></jhi-alert>\n\n  <div class=\"alert alert-warning\" id=\"no-result\" *ngIf=\"forms?.length === 0\">\n    <span jhiTranslate=\"cynapseTechApp.forms.home.notFound\">No forms found</span>\n  </div>\n\n  <div class=\"table-responsive\" id=\"entities\" *ngIf=\"forms && forms.length > 0\">\n    <table class=\"table table-striped\" aria-describedby=\"page-heading\">\n      <thead>\n        <tr>\n          <th scope=\"col\"><span jhiTranslate=\"global.field.id\">ID</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.name\">Name</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.cynapseId\">Cynapse Id</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.emailId\">Email Id</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.phoneNumber\">Phone Number</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.createdDate\">Created Date</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.referalCode\">Referal Code</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.formDocument\">Form Document</span></th>\n          <th scope=\"col\"><span jhiTranslate=\"cynapseTechApp.forms.user\">User</span></th>\n          <th scope=\"col\"></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let forms of forms; trackBy: trackId\" data-cy=\"entityTable\">\n          <td>\n            <a [routerLink]=\"['/forms', forms.id, 'view']\">{{ forms.id }}</a>\n          </td>\n          <td>{{ forms.name }}</td>\n          <td>{{ forms.cynapseId }}</td>\n          <td>{{ forms.emailId }}</td>\n          <td>{{ forms.phoneNumber }}</td>\n          <td>{{ forms.createdDate | formatMediumDate }}</td>\n          <td>{{ forms.referalCode }}</td>\n          <td>\n            <a *ngIf=\"forms.formDocument\" (click)=\"openFile(forms.formDocument, forms.formDocumentContentType)\">\n              <img\n                [src]=\"'data:' + forms.formDocumentContentType + ';base64,' + forms.formDocument\"\n                style=\"max-height: 30px\"\n                alt=\"forms image\"\n              />\n            </a>\n            <span *ngIf=\"forms.formDocument\">{{ forms.formDocumentContentType }}, {{ byteSize(forms.formDocument) }}</span>\n          </td>\n          <td>\n            {{ forms.user?.id }}\n          </td>\n          <td class=\"text-right\">\n            <div class=\"btn-group\">\n              <button type=\"submit\" [routerLink]=\"['/forms', forms.id, 'view']\" class=\"btn btn-info btn-sm\" data-cy=\"entityDetailsButton\">\n                <fa-icon icon=\"eye\"></fa-icon>\n                <span class=\"d-none d-md-inline\" jhiTranslate=\"entity.action.view\">View</span>\n              </button>\n\n              <button type=\"submit\" [routerLink]=\"['/forms', forms.id, 'edit']\" class=\"btn btn-primary btn-sm\" data-cy=\"entityEditButton\">\n                <fa-icon icon=\"pencil-alt\"></fa-icon>\n                <span class=\"d-none d-md-inline\" jhiTranslate=\"entity.action.edit\">Edit</span>\n              </button>\n\n              <button type=\"submit\" (click)=\"delete(forms)\" class=\"btn btn-danger btn-sm\" data-cy=\"entityDeleteButton\">\n                <fa-icon icon=\"times\"></fa-icon>\n                <span class=\"d-none d-md-inline\" jhiTranslate=\"entity.action.delete\">Delete</span>\n              </button>\n            </div>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n";

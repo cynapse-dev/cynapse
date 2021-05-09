@@ -1,0 +1,315 @@
+c236ae067d515d9d1307d1a76ad5b56b
+"use strict";
+
+/* istanbul ignore next */
+function cov_2n6l5p9618() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/detail/user-management-detail.component.ts";
+  var hash = "a80202de16f7b2682838c2680ef238e783ffeff9";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/detail/user-management-detail.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 47
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 17
+        },
+        end: {
+          line: 6,
+          column: 43
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 36
+        },
+        end: {
+          line: 17,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 27
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 25
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 11
+        }
+      },
+      "9": {
+        start: {
+          line: 14,
+          column: 12
+        },
+        end: {
+          line: 14,
+          column: 29
+        }
+      },
+      "10": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 34
+        }
+      },
+      "11": {
+        start: {
+          line: 25,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 70
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 23
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 12,
+            column: 4
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 12,
+            column: 15
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        line: 12
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 13,
+            column: 34
+          },
+          end: {
+            line: 13,
+            column: 35
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 48
+          },
+          end: {
+            line: 15,
+            column: 9
+          }
+        },
+        line: 13
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/detail/user-management-detail.component.ts",
+      mappings: ";;;;AAAA,wCAAkD;AAClD,4CAAiD;AAQjD,IAAa,6BAA6B,GAA1C,MAAa,6BAA6B;IAGxC,YAAoB,KAAqB;QAArB,UAAK,GAAL,KAAK,CAAgB;QAFzC,SAAI,GAAgB,IAAI,CAAC;IAEmB,CAAC;IAE7C,QAAQ;QACN,IAAI,CAAC,KAAK,CAAC,IAAI,CAAC,SAAS,CAAC,CAAC,EAAE,IAAI,EAAE,EAAE,EAAE;YACrC,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;QACnB,CAAC,CAAC,CAAC;IACL,CAAC;CACF,CAAA;AAVY,6BAA6B;IAJzC,gBAAS,CAAC;QACT,QAAQ,EAAE,sBAAsB;QAChC,kBAAa,yCAAyC,CAAA;KACvD,CAAC;6CAI2B,uBAAc;GAH9B,6BAA6B,CAUzC;AAVY,sEAA6B",
+      names: [],
+      sources: ["/home/karthik/cynapseTech/src/main/webapp/app/admin/user-management/detail/user-management-detail.component.ts"],
+      sourcesContent: ["import { Component, OnInit } from '@angular/core';\nimport { ActivatedRoute } from '@angular/router';\n\nimport { User } from '../user-management.model';\n\n@Component({\n  selector: 'jhi-user-mgmt-detail',\n  templateUrl: './user-management-detail.component.html',\n})\nexport class UserManagementDetailComponent implements OnInit {\n  user: User | null = null;\n\n  constructor(private route: ActivatedRoute) {}\n\n  ngOnInit(): void {\n    this.route.data.subscribe(({ user }) => {\n      this.user = user;\n    });\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a80202de16f7b2682838c2680ef238e783ffeff9"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2n6l5p9618 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2n6l5p9618();
+cov_2n6l5p9618().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2n6l5p9618().s[1]++;
+exports.UserManagementDetailComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_2n6l5p9618().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_2n6l5p9618().s[3]++, require("@angular/core"));
+const router_1 =
+/* istanbul ignore next */
+(cov_2n6l5p9618().s[4]++, require("@angular/router"));
+
+/* istanbul ignore next */
+cov_2n6l5p9618().s[5]++;
+let UserManagementDetailComponent = class UserManagementDetailComponent {
+  constructor(route) {
+    /* istanbul ignore next */
+    cov_2n6l5p9618().f[0]++;
+    cov_2n6l5p9618().s[6]++;
+    this.route = route;
+
+    /* istanbul ignore next */
+    cov_2n6l5p9618().s[7]++;
+    this.user = null;
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_2n6l5p9618().f[1]++;
+    cov_2n6l5p9618().s[8]++;
+    this.route.data.subscribe(({
+      user
+    }) => {
+      /* istanbul ignore next */
+      cov_2n6l5p9618().f[2]++;
+      cov_2n6l5p9618().s[9]++;
+      this.user = user;
+    });
+  }
+
+};
+
+/* istanbul ignore next */
+cov_2n6l5p9618().s[10]++;
+UserManagementDetailComponent = tslib_1.__decorate([core_1.Component({
+  selector: 'jhi-user-mgmt-detail',
+  template: require('./user-management-detail.component.html')
+}), tslib_1.__metadata("design:paramtypes", [router_1.ActivatedRoute])], UserManagementDetailComponent);
+
+/* istanbul ignore next */
+cov_2n6l5p9618().s[11]++;
+exports.UserManagementDetailComponent = UserManagementDetailComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2thcnRoaWsvY3luYXBzZVRlY2gvc3JjL21haW4vd2ViYXBwL2FwcC9hZG1pbi91c2VyLW1hbmFnZW1lbnQvZGV0YWlsL3VzZXItbWFuYWdlbWVudC1kZXRhaWwuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWtCRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFsQkgsTUFBQSxNQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLFFBQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxpQkFBQSxDQUFBLENBQUE7Ozs7QUFRQSxJQUFhLDZCQUE2QixHQUExQyxNQUFhLDZCQUFiLENBQTBDO0FBR3hDLEVBQUEsV0FBQSxDQUFvQixLQUFwQixFQUF5QztBQUFBO0FBQUE7QUFBQTtBQUFyQixTQUFBLEtBQUEsR0FBQSxLQUFBOztBQUFxQjtBQUFBO0FBRnpDLFNBQUEsSUFBQSxHQUFvQixJQUFwQjtBQUU2Qzs7QUFFN0MsRUFBQSxRQUFRLEdBQUE7QUFBQTtBQUFBO0FBQUE7QUFDTixTQUFLLEtBQUwsQ0FBVyxJQUFYLENBQWdCLFNBQWhCLENBQTBCLENBQUM7QUFBRSxNQUFBO0FBQUYsS0FBRCxLQUFhO0FBQUE7QUFBQTtBQUFBO0FBQ3JDLFdBQUssSUFBTCxHQUFZLElBQVo7QUFDRCxLQUZEO0FBR0Q7O0FBVHVDLENBQTFDOzs7O0FBQWEsNkJBQTZCLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUp6QyxNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUUsc0JBREQ7QUFFVCxFQUFBLFFBQUEsRUFBQSxPQUFBLENBQWEseUNBQWI7QUFGUyxDQUFWLENBSXlDLEUseUNBR2IsUUFBQSxDQUFBLGMsRUFIYSxDQUFBLEVBQTdCLDZCQUE2QixDQUE3Qjs7OztBQUFBLE9BQUEsQ0FBQSw2QkFBQSxHQUFBLDZCQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LCBPbkluaXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IEFjdGl2YXRlZFJvdXRlIH0gZnJvbSAnQGFuZ3VsYXIvcm91dGVyJztcblxuaW1wb3J0IHsgVXNlciB9IGZyb20gJy4uL3VzZXItbWFuYWdlbWVudC5tb2RlbCc7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogJ2poaS11c2VyLW1nbXQtZGV0YWlsJyxcbiAgdGVtcGxhdGVVcmw6ICcuL3VzZXItbWFuYWdlbWVudC1kZXRhaWwuY29tcG9uZW50Lmh0bWwnLFxufSlcbmV4cG9ydCBjbGFzcyBVc2VyTWFuYWdlbWVudERldGFpbENvbXBvbmVudCBpbXBsZW1lbnRzIE9uSW5pdCB7XG4gIHVzZXI6IFVzZXIgfCBudWxsID0gbnVsbDtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJvdXRlOiBBY3RpdmF0ZWRSb3V0ZSkge31cblxuICBuZ09uSW5pdCgpOiB2b2lkIHtcbiAgICB0aGlzLnJvdXRlLmRhdGEuc3Vic2NyaWJlKCh7IHVzZXIgfSkgPT4ge1xuICAgICAgdGhpcy51c2VyID0gdXNlcjtcbiAgICB9KTtcbiAgfVxufVxuIl19

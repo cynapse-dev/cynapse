@@ -1,0 +1,51 @@
+3673d3a2f1b115332d90edeae98a99d8
+/* istanbul ignore next */
+function cov_2q9jdzrnaz() {
+  var path = "/home/karthik/cynapseTech/src/main/webapp/app/login/login.component.html";
+  var hash = "186df2fb62cc15c625d99deaeb0282d242cb0543";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/karthik/cynapseTech/src/main/webapp/app/login/login.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 2615
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "186df2fb62cc15c625d99deaeb0282d242cb0543"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2q9jdzrnaz = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2q9jdzrnaz();
+cov_2q9jdzrnaz().s[0]++;
+module.exports = "<div>\n  <div class=\"row justify-content-center\">\n    <div class=\"col-lg-6 col-md-8 col-sm-10\">\n      <h1 jhiTranslate=\"login.title\" data-cy=\"loginTitle\">Sign in</h1>\n      <div class=\"alert alert-danger\" *ngIf=\"authenticationError\" jhiTranslate=\"login.messages.error.authentication\" data-cy=\"loginError\">\n        <strong>Failed to sign in!</strong> Please check your credentials and try again.\n      </div>\n      <form class=\"form\" role=\"form\" (ngSubmit)=\"login()\" [formGroup]=\"loginForm\">\n        <div class=\"form-group\">\n          <label class=\"username-label\" for=\"username\" jhiTranslate=\"global.form.username.label\">Login</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"username\"\n            id=\"username\"\n            placeholder=\"{{ 'global.form.username.placeholder' | translate }}\"\n            formControlName=\"username\"\n            #username\n            data-cy=\"username\"\n          />\n        </div>\n\n        <div class=\"form-group\">\n          <label for=\"password\" jhiTranslate=\"login.form.password\">Password</label>\n          <input\n            type=\"password\"\n            class=\"form-control\"\n            name=\"password\"\n            id=\"password\"\n            placeholder=\"{{ 'login.form.password.placeholder' | translate }}\"\n            formControlName=\"password\"\n            data-cy=\"password\"\n          />\n        </div>\n\n        <div class=\"form-check\">\n          <label class=\"form-check-label\" for=\"rememberMe\">\n            <input class=\"form-check-input\" type=\"checkbox\" name=\"rememberMe\" id=\"rememberMe\" formControlName=\"rememberMe\" />\n            <span jhiTranslate=\"login.form.rememberme\">Remember me</span>\n          </label>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-primary\" jhiTranslate=\"login.form.button\" data-cy=\"submit\">Sign in</button>\n      </form>\n      <div class=\"mt-3 alert alert-warning\">\n        <a class=\"alert-link\" routerLink=\"/account/reset/request\" jhiTranslate=\"login.password.forgot\" data-cy=\"forgetYourPasswordSelector\"\n          >Did you forget your password?</a\n        >\n      </div>\n\n      <div class=\"alert alert-warning\">\n        <span jhiTranslate=\"global.messages.info.register.noaccount\">You don't have an account yet?</span>\n        <a class=\"alert-link\" routerLink=\"/account/register\" jhiTranslate=\"global.messages.info.register.link\">Register a new account</a>\n      </div>\n    </div>\n  </div>\n</div>\n";
